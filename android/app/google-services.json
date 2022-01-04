@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "294678682182",
+    "project_id": "btechproject-26a81",
+    "storage_bucket": "btechproject-26a81.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294678682182:android:d9e3429171a7d563130847",
+        "android_client_info": {
+          "package_name": "com.example.b_tech_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "294678682182-n7gfmk2iasm1am2kiccjs0kqlgbilqu9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0l3IuqebLgun4Lh9YQjdbpYtXEj0t6DM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "294678682182-n7gfmk2iasm1am2kiccjs0kqlgbilqu9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
