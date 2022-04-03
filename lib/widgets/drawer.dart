@@ -1,3 +1,4 @@
+import 'package:b_tech_project/pages/user_profile.dart';
 import 'package:b_tech_project/widgets/home_page_card.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -27,9 +28,20 @@ class _MyDrawerState extends State<MyDrawer> {
 
                 child: Column(
                   children: [
-                    CircleAvatar(
-                      radius: size.width * .12,
-                      backgroundImage: const AssetImage('images/profile.jpeg'),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => UserProfile(),
+                          ),
+                        );
+                      },
+                      child: CircleAvatar(
+                        radius: size.width * .12,
+                        backgroundImage:
+                            const AssetImage('images/profile.jpeg'),
+                      ),
                     ),
                     const Text(
                       'Full Name',

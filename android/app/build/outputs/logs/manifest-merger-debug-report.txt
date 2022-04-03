@@ -1,655 +1,681 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:1:1-49:12
-INJECTED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:1:1-49:12
-INJECTED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:1:1-49:12
-INJECTED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:1:1-49:12
-MERGED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:1:1-49:12
-MERGED from [:firebase_auth] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:firebase_storage] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:cloud_firestore] /home/osama/AndroidStudioProjects/b_tech_project/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:firebase_core] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:image_picker] /home/osama/AndroidStudioProjects/b_tech_project/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-19:12
-MERGED from [:flutter_plugin_android_lifecycle] /home/osama/AndroidStudioProjects/b_tech_project/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/b_tech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
-MERGED from [:fluttertoast] /home/osama/AndroidStudioProjects/b_tech_project/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:permission_handler] /home/osama/AndroidStudioProjects/b_tech_project/build/permission_handler/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.firebase:firebase-analytics:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/93b0a1d9f850837cc791e1bdd9d913db/jetified-firebase-analytics-20.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.multidex:multidex:2.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/bc497780c1ce60ed2e7015258fc2513f/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:17:1-83:12
-MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/875fba2a3c7d150fb639a449876b754f/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:2:1-26:12
-MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/aac17191751d9819c4ba4efa4c4713d8/jetified-firebase-storage-20.0.0/AndroidManifest.xml:15:1-39:12
-MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d8b5451fc82c883313b73938aa29c281/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:17:1-36:12
-MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2b298d710992f12b9e2e0e6710dea16b/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:2:1-10:12
-MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /home/osama/.gradle/caches/transforms-2/files-2.1/ff5e8f7b0a77959153f924b5295ae982/jetified-firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:15:1-26:12
-MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2b663374f2a3beef67e4fc09532fc190/jetified-firebase-installations-17.0.0/AndroidManifest.xml:2:1-24:12
-MERGED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e8c12af64c0d197211b7d090cb61cdf8/jetified-firebase-common-20.0.0/AndroidManifest.xml:15:1-40:12
-MERGED from [androidx.exifinterface:exifinterface:1.3.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5aab23ebf0755884548d9d3bd3ecce40/exifinterface-1.3.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /home/osama/.gradle/caches/transforms-2/files-2.1/4137babf2606acb1e424ad3914d5b8b3/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/f263fcb179e74220f9266564bf6fa6b0/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.firebase:firebase-database-collection:18.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/369c59889e801cc817dee2786a28ea2c/jetified-firebase-database-collection-18.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/0813e45a0b3806629b40dbeb70c75a60/jetified-play-services-base-17.1.0/AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8450057caa35aac30a045729c438a3d4/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:17:1-46:12
-MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/46d239c8cf7500f03306f5880487a220/jetified-play-services-measurement-sdk-20.0.0/AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/ae256830a68ea5423e1b08b23ae8ac25/jetified-firebase-installations-interop-17.0.0/AndroidManifest.xml:15:1-23:12
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/da614d13d040eef48ad74ecd5566831c/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d69af976ec59be4fe5c1231889421a1e/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:17:1-31:12
-MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/70213607b0818b4f8f8dd665bbab7cec/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d08bc3c199a6063c33196b5ac214f718/jetified-play-services-measurement-sdk-api-20.0.0/AndroidManifest.xml:17:1-27:12
-MERGED from [com.google.android.gms:play-services-measurement-base:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/fd385550d7de69d9b4c13089dd2d51ca/jetified-play-services-measurement-base-20.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/1d87f6fa3b9ca7dba4820929f7068ad0/jetified-play-services-stats-17.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/51313c0ad4a1b443202a75e27094a8a3/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.android.gms:play-services-basement:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/14e561dfe998324f0993f7eed2935f20/jetified-play-services-basement-17.1.0/AndroidManifest.xml:17:1-28:12
-MERGED from [androidx.fragment:fragment:1.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/4ead4a41cc8b337b790d86429dcc7418/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.browser:browser:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/afd2d987ef6a954ce95af3f20bd0f6cf/browser-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/4e927d6984655c107bd05d46c5b4dbb8/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/b501a4de79069b6f0f7e19e89b9b1dda/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/7f810de1d48f35aaf9cad7d49b3dc285/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/40fa03cbf711c9b5abc7c7080df34e94/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/a530992fa67cbeb397fb094b8a1a22dc/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/a935fa587df289485954d05015b0662e/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/3a86517f25f758b64e56d4ba95cf6cf4/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/1bb1cda2446dfb9ac6ad42ce27b12501/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8fc41d1d021f97e69fbb6d77f999706d/customview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/00f3203391459c0511dc68ed11c07cc4/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/b3b81dbbcca08326c40e5acfc36670a3/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/3c8fd1bfddb99a7a7e21faa1397acdb4/core-1.1.0/AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e491a17ea3905cf4e8cc01da5acf5904/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/dba0871f5234d26df488af8865310f6f/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/af5ac34d8217e841163337c0c136aaf0/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/ad25664bdc2a6562f93cfb70f44807df/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.firebase:firebase-components:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e5f0c7957424a546e9da21a08a739815/jetified-firebase-components-17.0.0/AndroidManifest.xml:15:1-23:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/491bbb875d3deba872bb29adb6f841f9/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/ae5cd4776f4503a44a7812883c5a3277/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/454fd5669506c3ed5fdcf7b2ff03abe6/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/11efeec140e47cc964c7b51b01cdd88b/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/0341135a479a1847e64dc720fa73a9d9/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8b0cce3f36a1c28e7df6e72849a13547/print-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/1d4efdb868696ea36efd004abeb8239d/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/9dc01f80be5d003ac3d9f81c085f13fd/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.agorabuilder:native-full-sdk:3.5.0.3] /home/osama/.gradle/caches/transforms-2/files-2.1/79ff711f3f1c602ddaa125d9233b9f3f/jetified-native-full-sdk-3.5.0.3/AndroidManifest.xml:2:1-11:12
-MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/073fa8f73d9db3fc6f27ad8d002d7cd7/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
-MERGED from [io.grpc:grpc-android:1.41.0] /home/osama/.gradle/caches/transforms-2/files-2.1/adf0ad4e5cb0b2226216b1b3470356be/jetified-grpc-android-1.41.0/AndroidManifest.xml:2:1-13:12
-INJECTED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:1:1-49:12
+INJECTED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:1:1-49:12
+INJECTED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:1:1-49:12
+INJECTED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:1:1-49:12
+MERGED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:1:1-49:12
+MERGED from [:firebase_auth] /home/osama/AndroidStudioProjects/btech_project/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_storage] /home/osama/AndroidStudioProjects/btech_project/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:cloud_firestore] /home/osama/AndroidStudioProjects/btech_project/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_core] /home/osama/AndroidStudioProjects/btech_project/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:image_picker] /home/osama/AndroidStudioProjects/btech_project/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-19:12
+MERGED from [:flutter_plugin_android_lifecycle] /home/osama/AndroidStudioProjects/btech_project/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/btech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
+MERGED from [:fluttertoast] /home/osama/AndroidStudioProjects/btech_project/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:permission_handler] /home/osama/AndroidStudioProjects/btech_project/build/permission_handler/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.window:window-java:1.0.0-beta04] /home/osama/.gradle/caches/transforms-2/files-2.1/a3b86b42fafb2019c6d99a912992ce19/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.window:window:1.0.0-beta04] /home/osama/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:17:1-33:12
+MERGED from [com.google.firebase:firebase-analytics:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/562d7edd9822a51baef18c63d40be694/jetified-firebase-analytics-20.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.multidex:multidex:2.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/02d04e6dfdbeb319e115f5728d226784/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:17:1-83:12
+MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/50f63e17caca2b851f804bbbf7a394c2/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:2:1-26:12
+MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/9c369bd6abc3852663b4e5f4caccd1b1/jetified-firebase-storage-20.0.0/AndroidManifest.xml:15:1-39:12
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2ab5a2b7434f07ae65fd76eec1eb46d2/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/c0fc708caaa4589bc487805750ad8901/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /home/osama/.gradle/caches/transforms-2/files-2.1/14618db3d0804b47739e3f1a54d17be3/jetified-firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:15:1-26:12
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/544bb83cdfcc0c9ba48353730451aa98/jetified-firebase-installations-17.0.0/AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e9bee4f77b660f6ff89d0b5e41260363/jetified-firebase-common-20.0.0/AndroidManifest.xml:15:1-40:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.0] /home/osama/.gradle/caches/transforms-2/files-2.1/b7a4bedb3ae5643a7a7af8bc9a9af596/exifinterface-1.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /home/osama/.gradle/caches/transforms-2/files-2.1/1579bd1641f52804fc09caeaeac50d9c/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/b9f3ea16de2ef1ca92c5362ec604ec66/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-database-collection:18.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/c24d54ef33d65d383b557ca6eddafa0a/jetified-firebase-database-collection-18.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/6627ebe7ef94065a47e7e8e9d66c6a9d/jetified-play-services-base-17.1.0/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/22fb41c30f31ef191ee71db2f1f61b9e/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:17:1-46:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/f9d6cf427a3ff2f6c4c12d3931a573b4/jetified-play-services-measurement-sdk-20.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/51a20ee1b7202dae7071318eb86abc38/jetified-firebase-installations-interop-17.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8a93bc0e3a44e9adb6e6337d9f0f03d5/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5286d39c3abc3b20154f7cd1386effe5/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/96b161643d9a3b2628aa2436c5d936fe/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/fcda7cc943836a99b4f7278997cd4bef/jetified-play-services-measurement-sdk-api-20.0.0/AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-measurement-base:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e2d8f37e6c36df5a18768d19935d40a5/jetified-play-services-measurement-base-20.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d20e113c476e21905d86371c7fcd3075/jetified-play-services-stats-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/f073652a2b0a9b6b460323e1b4f086ac/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-basement:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/0c11252d9d87559920ca1b1a0bcd2692/jetified-play-services-basement-17.1.0/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/fcfa9c07e15be26ded9661d0cde5236d/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.browser:browser:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/ec20f7242759cfe0d6237ced59ef1a02/browser-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/1aaca2244d3852aa3051f6ec5e863d3f/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/55efa78fe7dd5340c3b16a9e76ef0926/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/b4f7568fea2f511d767829dd5b644d2f/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e76984245f77d39c38f4d76388592dc0/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d163e2127d8958c9002b4147c4b31dec/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5cf36af8c665794dec2262fc6fa16b40/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/ce3fae280668b0503a293c526ec9328a/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/aee3a20ed22eaa6ce58c2a70407c377c/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5f88a748e85d2ef9c8213280277cced9/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8d97c12dfdb8c2847306c37b87aa48f1/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/7df58ccd2ccc82bc81039404188d6bbf/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.6.0] /home/osama/.gradle/caches/transforms-2/files-2.1/14b93615368c2249f1830e26ca064ab5/core-1.6.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/osama/.gradle/caches/transforms-2/files-2.1/0fcc2619fc2d4a04b76c2cc8424c6b65/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8aaf6886d114b38b49bc161f6fefc2ae/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/ed337045782a87292c529ce55dd5bf4f/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/0e73c827728350d15714a2d8006721b6/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.tracing:tracing:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/3b4820e24d46e21c89efa32f5c2d6e2e/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-components:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d303dc6bb1b59f5c94a63e6083442da7/jetified-firebase-components-17.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5408995d19686f9d35f8a810d9d7986f/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/osama/.gradle/caches/transforms-2/files-2.1/0bd53d61454f05a360ed50c12e1c0f57/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2a7f1fd9e53de4d9b5d232b69f7dc1ae/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e8863814c459b83896fb72460c5f5555/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/597222039f0715c7401267f68f1f9e7c/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/c5fc0789798e34bd45f9039f964c33eb/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/fe7136c18bf90ce15610c08732e73d45/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/c08dcac29cefcadf912758ee4601aef8/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.agorabuilder:native-full-sdk:3.5.0.3] /home/osama/.gradle/caches/transforms-2/files-2.1/453fd98f459bf16fe69f3190aa6f56bd/jetified-native-full-sdk-3.5.0.3/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2341977d1a91ba1cfe2b6d080a2fe8a6/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
+MERGED from [io.grpc:grpc-android:1.41.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5ee4d160e5fc9e437c7e45a34b511c13/jetified-grpc-android-1.41.0/AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/7e5cb6c6f9437da119823e44c35d9b10/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 	package
-		ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:2:5-41
-		INJECTED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml
-		INJECTED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/debug/AndroidManifest.xml
+		ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:2:5-41
+		INJECTED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/debug/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml
-		ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:1:1-49:12
-		INJECTED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:1:1-49:12
+		INJECTED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/debug/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml
-		ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:1:1-49:12
-		INJECTED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:1:1-49:12
+		INJECTED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:1:11-69
 application
-ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:3:4-40:19
-MERGED from [:firebase_auth] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_auth] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_storage] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_storage] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:cloud_firestore] /home/osama/AndroidStudioProjects/b_tech_project/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:cloud_firestore] /home/osama/AndroidStudioProjects/b_tech_project/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_core] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_core] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:image_picker] /home/osama/AndroidStudioProjects/b_tech_project/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-17:19
-MERGED from [:image_picker] /home/osama/AndroidStudioProjects/b_tech_project/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-17:19
-MERGED from [com.google.firebase:firebase-analytics:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/93b0a1d9f850837cc791e1bdd9d913db/jetified-firebase-analytics-20.0.0/AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-analytics:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/93b0a1d9f850837cc791e1bdd9d913db/jetified-firebase-analytics-20.0.0/AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:26:5-81:19
-MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:26:5-81:19
-MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/875fba2a3c7d150fb639a449876b754f/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:16:5-24:19
-MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/875fba2a3c7d150fb639a449876b754f/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:16:5-24:19
-MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/aac17191751d9819c4ba4efa4c4713d8/jetified-firebase-storage-20.0.0/AndroidManifest.xml:29:5-37:19
-MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/aac17191751d9819c4ba4efa4c4713d8/jetified-firebase-storage-20.0.0/AndroidManifest.xml:29:5-37:19
-MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d8b5451fc82c883313b73938aa29c281/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:26:5-34:19
-MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d8b5451fc82c883313b73938aa29c281/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:26:5-34:19
-MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2b298d710992f12b9e2e0e6710dea16b/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2b298d710992f12b9e2e0e6710dea16b/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /home/osama/.gradle/caches/transforms-2/files-2.1/ff5e8f7b0a77959153f924b5295ae982/jetified-firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:24:5-20
-MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /home/osama/.gradle/caches/transforms-2/files-2.1/ff5e8f7b0a77959153f924b5295ae982/jetified-firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:24:5-20
-MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2b663374f2a3beef67e4fc09532fc190/jetified-firebase-installations-17.0.0/AndroidManifest.xml:14:5-22:19
-MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2b663374f2a3beef67e4fc09532fc190/jetified-firebase-installations-17.0.0/AndroidManifest.xml:14:5-22:19
-MERGED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e8c12af64c0d197211b7d090cb61cdf8/jetified-firebase-common-20.0.0/AndroidManifest.xml:25:5-38:19
-MERGED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e8c12af64c0d197211b7d090cb61cdf8/jetified-firebase-common-20.0.0/AndroidManifest.xml:25:5-38:19
-MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/f263fcb179e74220f9266564bf6fa6b0/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/f263fcb179e74220f9266564bf6fa6b0/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/0813e45a0b3806629b40dbeb70c75a60/jetified-play-services-base-17.1.0/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/0813e45a0b3806629b40dbeb70c75a60/jetified-play-services-base-17.1.0/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8450057caa35aac30a045729c438a3d4/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:28:5-44:19
-MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8450057caa35aac30a045729c438a3d4/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:28:5-44:19
-MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/46d239c8cf7500f03306f5880487a220/jetified-play-services-measurement-sdk-20.0.0/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/46d239c8cf7500f03306f5880487a220/jetified-play-services-measurement-sdk-20.0.0/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/da614d13d040eef48ad74ecd5566831c/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/da614d13d040eef48ad74ecd5566831c/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d69af976ec59be4fe5c1231889421a1e/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d69af976ec59be4fe5c1231889421a1e/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/70213607b0818b4f8f8dd665bbab7cec/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/70213607b0818b4f8f8dd665bbab7cec/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-measurement-base:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/fd385550d7de69d9b4c13089dd2d51ca/jetified-play-services-measurement-base-20.0.0/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-measurement-base:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/fd385550d7de69d9b4c13089dd2d51ca/jetified-play-services-measurement-base-20.0.0/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/1d87f6fa3b9ca7dba4820929f7068ad0/jetified-play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/1d87f6fa3b9ca7dba4820929f7068ad0/jetified-play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/51313c0ad4a1b443202a75e27094a8a3/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/51313c0ad4a1b443202a75e27094a8a3/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.android.gms:play-services-basement:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/14e561dfe998324f0993f7eed2935f20/jetified-play-services-basement-17.1.0/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/14e561dfe998324f0993f7eed2935f20/jetified-play-services-basement-17.1.0/AndroidManifest.xml:22:5-26:19
-MERGED from [androidx.core:core:1.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/3c8fd1bfddb99a7a7e21faa1397acdb4/core-1.1.0/AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/3c8fd1bfddb99a7a7e21faa1397acdb4/core-1.1.0/AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/454fd5669506c3ed5fdcf7b2ff03abe6/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/454fd5669506c3ed5fdcf7b2ff03abe6/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:3:4-40:19
+MERGED from [:firebase_auth] /home/osama/AndroidStudioProjects/btech_project/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_auth] /home/osama/AndroidStudioProjects/btech_project/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_storage] /home/osama/AndroidStudioProjects/btech_project/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_storage] /home/osama/AndroidStudioProjects/btech_project/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:cloud_firestore] /home/osama/AndroidStudioProjects/btech_project/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:cloud_firestore] /home/osama/AndroidStudioProjects/btech_project/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] /home/osama/AndroidStudioProjects/btech_project/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] /home/osama/AndroidStudioProjects/btech_project/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:image_picker] /home/osama/AndroidStudioProjects/btech_project/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-17:19
+MERGED from [:image_picker] /home/osama/AndroidStudioProjects/btech_project/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-17:19
+MERGED from [androidx.window:window:1.0.0-beta04] /home/osama/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0-beta04] /home/osama/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
+MERGED from [com.google.firebase:firebase-analytics:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/562d7edd9822a51baef18c63d40be694/jetified-firebase-analytics-20.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/562d7edd9822a51baef18c63d40be694/jetified-firebase-analytics-20.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:26:5-81:19
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:26:5-81:19
+MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/50f63e17caca2b851f804bbbf7a394c2/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:16:5-24:19
+MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/50f63e17caca2b851f804bbbf7a394c2/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:16:5-24:19
+MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/9c369bd6abc3852663b4e5f4caccd1b1/jetified-firebase-storage-20.0.0/AndroidManifest.xml:29:5-37:19
+MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/9c369bd6abc3852663b4e5f4caccd1b1/jetified-firebase-storage-20.0.0/AndroidManifest.xml:29:5-37:19
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2ab5a2b7434f07ae65fd76eec1eb46d2/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2ab5a2b7434f07ae65fd76eec1eb46d2/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/c0fc708caaa4589bc487805750ad8901/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/c0fc708caaa4589bc487805750ad8901/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /home/osama/.gradle/caches/transforms-2/files-2.1/14618db3d0804b47739e3f1a54d17be3/jetified-firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:24:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /home/osama/.gradle/caches/transforms-2/files-2.1/14618db3d0804b47739e3f1a54d17be3/jetified-firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:24:5-20
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/544bb83cdfcc0c9ba48353730451aa98/jetified-firebase-installations-17.0.0/AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/544bb83cdfcc0c9ba48353730451aa98/jetified-firebase-installations-17.0.0/AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e9bee4f77b660f6ff89d0b5e41260363/jetified-firebase-common-20.0.0/AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e9bee4f77b660f6ff89d0b5e41260363/jetified-firebase-common-20.0.0/AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/b9f3ea16de2ef1ca92c5362ec604ec66/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/b9f3ea16de2ef1ca92c5362ec604ec66/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/6627ebe7ef94065a47e7e8e9d66c6a9d/jetified-play-services-base-17.1.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/6627ebe7ef94065a47e7e8e9d66c6a9d/jetified-play-services-base-17.1.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/22fb41c30f31ef191ee71db2f1f61b9e/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/22fb41c30f31ef191ee71db2f1f61b9e/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/f9d6cf427a3ff2f6c4c12d3931a573b4/jetified-play-services-measurement-sdk-20.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/f9d6cf427a3ff2f6c4c12d3931a573b4/jetified-play-services-measurement-sdk-20.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8a93bc0e3a44e9adb6e6337d9f0f03d5/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8a93bc0e3a44e9adb6e6337d9f0f03d5/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5286d39c3abc3b20154f7cd1386effe5/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5286d39c3abc3b20154f7cd1386effe5/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/96b161643d9a3b2628aa2436c5d936fe/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/96b161643d9a3b2628aa2436c5d936fe/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e2d8f37e6c36df5a18768d19935d40a5/jetified-play-services-measurement-base-20.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e2d8f37e6c36df5a18768d19935d40a5/jetified-play-services-measurement-base-20.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d20e113c476e21905d86371c7fcd3075/jetified-play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d20e113c476e21905d86371c7fcd3075/jetified-play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/f073652a2b0a9b6b460323e1b4f086ac/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/f073652a2b0a9b6b460323e1b4f086ac/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-basement:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/0c11252d9d87559920ca1b1a0bcd2692/jetified-play-services-basement-17.1.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/0c11252d9d87559920ca1b1a0bcd2692/jetified-play-services-basement-17.1.0/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.6.0] /home/osama/.gradle/caches/transforms-2/files-2.1/14b93615368c2249f1830e26ca064ab5/core-1.6.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.6.0] /home/osama/.gradle/caches/transforms-2/files-2.1/14b93615368c2249f1830e26ca064ab5/core-1.6.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/osama/.gradle/caches/transforms-2/files-2.1/0bd53d61454f05a360ed50c12e1c0f57/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/osama/.gradle/caches/transforms-2/files-2.1/0bd53d61454f05a360ed50c12e1c0f57/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/3c8fd1bfddb99a7a7e21faa1397acdb4/core-1.1.0/AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.6.0] /home/osama/.gradle/caches/transforms-2/files-2.1/14b93615368c2249f1830e26ca064ab5/core-1.6.0/AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:4:9-39
+		ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:4:9-39
 	android:icon
-		ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:5:9-43
+		ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:5:9-43
 activity#com.example.b_tech_project.MainActivity
-ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:6:9-34:20
+ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:6:9-34:20
 	android:launchMode
-		ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:8:13-43
+		ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:8:13-43
 	android:hardwareAccelerated
-		ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:11:13-47
+		ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:11:13-47
 	android:windowSoftInputMode
-		ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:12:13-55
+		ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:12:13-55
 	android:configChanges
-		ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:10:13-163
+		ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:10:13-163
 	android:theme
-		ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:9:13-47
+		ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:9:13-47
 	android:name
-		ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:7:13-41
+		ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:7:13-41
 meta-data#io.flutter.embedding.android.NormalTheme
-ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:17:13-20:17
+ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:17:13-20:17
 	android:resource
-		ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:19:15-52
+		ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:19:15-52
 	android:name
-		ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:18:15-70
+		ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:18:15-70
 meta-data#io.flutter.embedding.android.SplashScreenDrawable
-ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:26:13-29:17
+ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:26:13-29:17
 	android:resource
-		ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:28:15-61
+		ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:28:15-61
 	android:name
-		ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:27:15-79
+		ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:27:15-79
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:30:13-33:29
+ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:30:13-33:29
 action#android.intent.action.MAIN
-ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:31:17-68
+ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:31:17-68
 	android:name
-		ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:31:25-66
+		ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:31:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:32:17-76
+ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:32:17-76
 	android:name
-		ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:32:27-74
+		ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:32:27-74
 meta-data#flutterEmbedding
-ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:37:9-39:33
+ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:37:9-39:33
 	android:value
-		ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:39:13-30
+		ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:39:13-30
 	android:name
-		ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:38:13-44
+		ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:38:13-44
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:41:5-74
-MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/b_tech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-75
-MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/b_tech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-75
+ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:41:5-74
+MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/btech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-75
+MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/btech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-75
 	android:name
-		ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:41:22-72
+		ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:41:22-72
 uses-permission#android.permission.INTERNET
-ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:42:5-67
-MERGED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:42:5-67
-MERGED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:42:5-67
-MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/b_tech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
-MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/b_tech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
-MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/875fba2a3c7d150fb639a449876b754f/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:14:5-67
-MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/875fba2a3c7d150fb639a449876b754f/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:14:5-67
-MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/aac17191751d9819c4ba4efa4c4713d8/jetified-firebase-storage-20.0.0/AndroidManifest.xml:27:5-67
-MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/aac17191751d9819c4ba4efa4c4713d8/jetified-firebase-storage-20.0.0/AndroidManifest.xml:27:5-67
-MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d8b5451fc82c883313b73938aa29c281/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:22:5-67
-MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d8b5451fc82c883313b73938aa29c281/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2b663374f2a3beef67e4fc09532fc190/jetified-firebase-installations-17.0.0/AndroidManifest.xml:11:5-67
-MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2b663374f2a3beef67e4fc09532fc190/jetified-firebase-installations-17.0.0/AndroidManifest.xml:11:5-67
-MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8450057caa35aac30a045729c438a3d4/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8450057caa35aac30a045729c438a3d4/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d69af976ec59be4fe5c1231889421a1e/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d69af976ec59be4fe5c1231889421a1e/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d08bc3c199a6063c33196b5ac214f718/jetified-play-services-measurement-sdk-api-20.0.0/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d08bc3c199a6063c33196b5ac214f718/jetified-play-services-measurement-sdk-api-20.0.0/AndroidManifest.xml:23:5-67
+ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:42:5-67
+MERGED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:42:5-67
+MERGED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:42:5-67
+MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/btech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
+MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/btech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/50f63e17caca2b851f804bbbf7a394c2/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/50f63e17caca2b851f804bbbf7a394c2/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/9c369bd6abc3852663b4e5f4caccd1b1/jetified-firebase-storage-20.0.0/AndroidManifest.xml:27:5-67
+MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/9c369bd6abc3852663b4e5f4caccd1b1/jetified-firebase-storage-20.0.0/AndroidManifest.xml:27:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2ab5a2b7434f07ae65fd76eec1eb46d2/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2ab5a2b7434f07ae65fd76eec1eb46d2/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/544bb83cdfcc0c9ba48353730451aa98/jetified-firebase-installations-17.0.0/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/544bb83cdfcc0c9ba48353730451aa98/jetified-firebase-installations-17.0.0/AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/22fb41c30f31ef191ee71db2f1f61b9e/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/22fb41c30f31ef191ee71db2f1f61b9e/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5286d39c3abc3b20154f7cd1386effe5/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5286d39c3abc3b20154f7cd1386effe5/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/fcda7cc943836a99b4f7278997cd4bef/jetified-play-services-measurement-sdk-api-20.0.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/fcda7cc943836a99b4f7278997cd4bef/jetified-play-services-measurement-sdk-api-20.0.0/AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:42:22-64
+		ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:42:22-64
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:43:5-71
-MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/b_tech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-71
-MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/b_tech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-71
+ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:43:5-71
+MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/btech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-71
+MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/btech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-71
 	android:name
-		ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:43:22-68
+		ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:43:22-68
 uses-permission#android.permission.CAMERA
-ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:44:5-65
-MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/b_tech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-65
-MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/b_tech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-65
+ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:44:5-65
+MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/btech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-65
+MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/btech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-65
 	android:name
-		ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:44:22-62
+		ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:44:22-62
 uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
-ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:45:5-80
-MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/b_tech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-80
-MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/b_tech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-80
+ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:45:5-80
+MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/btech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-80
+MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/btech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-80
 	android:name
-		ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:45:22-77
+		ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:45:22-77
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:46:5-79
-MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/b_tech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-79
-MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/b_tech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-79
-MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/875fba2a3c7d150fb639a449876b754f/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:13:5-79
-MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/875fba2a3c7d150fb639a449876b754f/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:13:5-79
-MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/aac17191751d9819c4ba4efa4c4713d8/jetified-firebase-storage-20.0.0/AndroidManifest.xml:26:5-79
-MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/aac17191751d9819c4ba4efa4c4713d8/jetified-firebase-storage-20.0.0/AndroidManifest.xml:26:5-79
-MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d8b5451fc82c883313b73938aa29c281/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:23:5-79
-MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d8b5451fc82c883313b73938aa29c281/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2b663374f2a3beef67e4fc09532fc190/jetified-firebase-installations-17.0.0/AndroidManifest.xml:10:5-79
-MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2b663374f2a3beef67e4fc09532fc190/jetified-firebase-installations-17.0.0/AndroidManifest.xml:10:5-79
-MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8450057caa35aac30a045729c438a3d4/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8450057caa35aac30a045729c438a3d4/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d69af976ec59be4fe5c1231889421a1e/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d69af976ec59be4fe5c1231889421a1e/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d08bc3c199a6063c33196b5ac214f718/jetified-play-services-measurement-sdk-api-20.0.0/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d08bc3c199a6063c33196b5ac214f718/jetified-play-services-measurement-sdk-api-20.0.0/AndroidManifest.xml:24:5-79
-MERGED from [io.grpc:grpc-android:1.41.0] /home/osama/.gradle/caches/transforms-2/files-2.1/adf0ad4e5cb0b2226216b1b3470356be/jetified-grpc-android-1.41.0/AndroidManifest.xml:11:5-79
-MERGED from [io.grpc:grpc-android:1.41.0] /home/osama/.gradle/caches/transforms-2/files-2.1/adf0ad4e5cb0b2226216b1b3470356be/jetified-grpc-android-1.41.0/AndroidManifest.xml:11:5-79
+ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:46:5-79
+MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/btech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-79
+MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/btech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-79
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/50f63e17caca2b851f804bbbf7a394c2/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/50f63e17caca2b851f804bbbf7a394c2/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/9c369bd6abc3852663b4e5f4caccd1b1/jetified-firebase-storage-20.0.0/AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/9c369bd6abc3852663b4e5f4caccd1b1/jetified-firebase-storage-20.0.0/AndroidManifest.xml:26:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2ab5a2b7434f07ae65fd76eec1eb46d2/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2ab5a2b7434f07ae65fd76eec1eb46d2/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/544bb83cdfcc0c9ba48353730451aa98/jetified-firebase-installations-17.0.0/AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/544bb83cdfcc0c9ba48353730451aa98/jetified-firebase-installations-17.0.0/AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/22fb41c30f31ef191ee71db2f1f61b9e/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/22fb41c30f31ef191ee71db2f1f61b9e/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5286d39c3abc3b20154f7cd1386effe5/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5286d39c3abc3b20154f7cd1386effe5/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/fcda7cc943836a99b4f7278997cd4bef/jetified-play-services-measurement-sdk-api-20.0.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/fcda7cc943836a99b4f7278997cd4bef/jetified-play-services-measurement-sdk-api-20.0.0/AndroidManifest.xml:24:5-79
+MERGED from [io.grpc:grpc-android:1.41.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5ee4d160e5fc9e437c7e45a34b511c13/jetified-grpc-android-1.41.0/AndroidManifest.xml:11:5-79
+MERGED from [io.grpc:grpc-android:1.41.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5ee4d160e5fc9e437c7e45a34b511c13/jetified-grpc-android-1.41.0/AndroidManifest.xml:11:5-79
 	android:name
-		ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:46:22-76
+		ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:46:22-76
 uses-permission#android.permission.BLUETOOTH
-ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:48:5-68
-MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/b_tech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:16:5-68
-MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/b_tech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:16:5-68
+ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:48:5-68
+MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/btech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:16:5-68
+MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/btech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:16:5-68
 	android:name
-		ADDED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml:48:22-65
+		ADDED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml:48:22-65
 uses-sdk
-INJECTED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml
-INJECTED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml
-MERGED from [:firebase_auth] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_auth] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_storage] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_storage] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:cloud_firestore] /home/osama/AndroidStudioProjects/b_tech_project/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:cloud_firestore] /home/osama/AndroidStudioProjects/b_tech_project/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:image_picker] /home/osama/AndroidStudioProjects/b_tech_project/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:image_picker] /home/osama/AndroidStudioProjects/b_tech_project/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:flutter_plugin_android_lifecycle] /home/osama/AndroidStudioProjects/b_tech_project/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:flutter_plugin_android_lifecycle] /home/osama/AndroidStudioProjects/b_tech_project/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/b_tech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:6:5-8:41
-MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/b_tech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:6:5-8:41
-MERGED from [:fluttertoast] /home/osama/AndroidStudioProjects/b_tech_project/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:fluttertoast] /home/osama/AndroidStudioProjects/b_tech_project/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:permission_handler] /home/osama/AndroidStudioProjects/b_tech_project/build/permission_handler/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:permission_handler] /home/osama/AndroidStudioProjects/b_tech_project/build/permission_handler/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-analytics:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/93b0a1d9f850837cc791e1bdd9d913db/jetified-firebase-analytics-20.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-analytics:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/93b0a1d9f850837cc791e1bdd9d913db/jetified-firebase-analytics-20.0.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.multidex:multidex:2.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/bc497780c1ce60ed2e7015258fc2513f/multidex-2.0.0/AndroidManifest.xml:20:5-43
-MERGED from [androidx.multidex:multidex:2.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/bc497780c1ce60ed2e7015258fc2513f/multidex-2.0.0/AndroidManifest.xml:20:5-43
-MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:21:5-44
-MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:21:5-44
-MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/875fba2a3c7d150fb639a449876b754f/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/875fba2a3c7d150fb639a449876b754f/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/aac17191751d9819c4ba4efa4c4713d8/jetified-firebase-storage-20.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/aac17191751d9819c4ba4efa4c4713d8/jetified-firebase-storage-20.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d8b5451fc82c883313b73938aa29c281/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d8b5451fc82c883313b73938aa29c281/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2b298d710992f12b9e2e0e6710dea16b/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2b298d710992f12b9e2e0e6710dea16b/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /home/osama/.gradle/caches/transforms-2/files-2.1/ff5e8f7b0a77959153f924b5295ae982/jetified-firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /home/osama/.gradle/caches/transforms-2/files-2.1/ff5e8f7b0a77959153f924b5295ae982/jetified-firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2b663374f2a3beef67e4fc09532fc190/jetified-firebase-installations-17.0.0/AndroidManifest.xml:6:5-8:41
-MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2b663374f2a3beef67e4fc09532fc190/jetified-firebase-installations-17.0.0/AndroidManifest.xml:6:5-8:41
-MERGED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e8c12af64c0d197211b7d090cb61cdf8/jetified-firebase-common-20.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e8c12af64c0d197211b7d090cb61cdf8/jetified-firebase-common-20.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.exifinterface:exifinterface:1.3.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5aab23ebf0755884548d9d3bd3ecce40/exifinterface-1.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.exifinterface:exifinterface:1.3.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5aab23ebf0755884548d9d3bd3ecce40/exifinterface-1.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /home/osama/.gradle/caches/transforms-2/files-2.1/4137babf2606acb1e424ad3914d5b8b3/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /home/osama/.gradle/caches/transforms-2/files-2.1/4137babf2606acb1e424ad3914d5b8b3/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/f263fcb179e74220f9266564bf6fa6b0/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/f263fcb179e74220f9266564bf6fa6b0/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-database-collection:18.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/369c59889e801cc817dee2786a28ea2c/jetified-firebase-database-collection-18.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.firebase:firebase-database-collection:18.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/369c59889e801cc817dee2786a28ea2c/jetified-firebase-database-collection-18.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/0813e45a0b3806629b40dbeb70c75a60/jetified-play-services-base-17.1.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/0813e45a0b3806629b40dbeb70c75a60/jetified-play-services-base-17.1.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8450057caa35aac30a045729c438a3d4/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8450057caa35aac30a045729c438a3d4/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/46d239c8cf7500f03306f5880487a220/jetified-play-services-measurement-sdk-20.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/46d239c8cf7500f03306f5880487a220/jetified-play-services-measurement-sdk-20.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/ae256830a68ea5423e1b08b23ae8ac25/jetified-firebase-installations-interop-17.0.0/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/ae256830a68ea5423e1b08b23ae8ac25/jetified-firebase-installations-interop-17.0.0/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/da614d13d040eef48ad74ecd5566831c/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/da614d13d040eef48ad74ecd5566831c/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d69af976ec59be4fe5c1231889421a1e/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d69af976ec59be4fe5c1231889421a1e/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/70213607b0818b4f8f8dd665bbab7cec/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/70213607b0818b4f8f8dd665bbab7cec/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d08bc3c199a6063c33196b5ac214f718/jetified-play-services-measurement-sdk-api-20.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d08bc3c199a6063c33196b5ac214f718/jetified-play-services-measurement-sdk-api-20.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-base:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/fd385550d7de69d9b4c13089dd2d51ca/jetified-play-services-measurement-base-20.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-measurement-base:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/fd385550d7de69d9b4c13089dd2d51ca/jetified-play-services-measurement-base-20.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/1d87f6fa3b9ca7dba4820929f7068ad0/jetified-play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/1d87f6fa3b9ca7dba4820929f7068ad0/jetified-play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/51313c0ad4a1b443202a75e27094a8a3/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/51313c0ad4a1b443202a75e27094a8a3/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/14e561dfe998324f0993f7eed2935f20/jetified-play-services-basement-17.1.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/14e561dfe998324f0993f7eed2935f20/jetified-play-services-basement-17.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/4ead4a41cc8b337b790d86429dcc7418/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/4ead4a41cc8b337b790d86429dcc7418/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.browser:browser:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/afd2d987ef6a954ce95af3f20bd0f6cf/browser-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.browser:browser:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/afd2d987ef6a954ce95af3f20bd0f6cf/browser-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/4e927d6984655c107bd05d46c5b4dbb8/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/4e927d6984655c107bd05d46c5b4dbb8/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/b501a4de79069b6f0f7e19e89b9b1dda/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/b501a4de79069b6f0f7e19e89b9b1dda/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/7f810de1d48f35aaf9cad7d49b3dc285/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/7f810de1d48f35aaf9cad7d49b3dc285/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/40fa03cbf711c9b5abc7c7080df34e94/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/40fa03cbf711c9b5abc7c7080df34e94/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/a530992fa67cbeb397fb094b8a1a22dc/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/a530992fa67cbeb397fb094b8a1a22dc/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/a935fa587df289485954d05015b0662e/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/a935fa587df289485954d05015b0662e/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/3a86517f25f758b64e56d4ba95cf6cf4/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/3a86517f25f758b64e56d4ba95cf6cf4/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/1bb1cda2446dfb9ac6ad42ce27b12501/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/1bb1cda2446dfb9ac6ad42ce27b12501/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8fc41d1d021f97e69fbb6d77f999706d/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8fc41d1d021f97e69fbb6d77f999706d/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/00f3203391459c0511dc68ed11c07cc4/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/00f3203391459c0511dc68ed11c07cc4/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/b3b81dbbcca08326c40e5acfc36670a3/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/b3b81dbbcca08326c40e5acfc36670a3/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/3c8fd1bfddb99a7a7e21faa1397acdb4/core-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/3c8fd1bfddb99a7a7e21faa1397acdb4/core-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e491a17ea3905cf4e8cc01da5acf5904/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e491a17ea3905cf4e8cc01da5acf5904/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/dba0871f5234d26df488af8865310f6f/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/dba0871f5234d26df488af8865310f6f/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/af5ac34d8217e841163337c0c136aaf0/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/af5ac34d8217e841163337c0c136aaf0/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/ad25664bdc2a6562f93cfb70f44807df/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/ad25664bdc2a6562f93cfb70f44807df/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-components:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e5f0c7957424a546e9da21a08a739815/jetified-firebase-components-17.0.0/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-components:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e5f0c7957424a546e9da21a08a739815/jetified-firebase-components-17.0.0/AndroidManifest.xml:19:5-21:41
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/491bbb875d3deba872bb29adb6f841f9/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/491bbb875d3deba872bb29adb6f841f9/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/ae5cd4776f4503a44a7812883c5a3277/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/ae5cd4776f4503a44a7812883c5a3277/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/454fd5669506c3ed5fdcf7b2ff03abe6/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/454fd5669506c3ed5fdcf7b2ff03abe6/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/11efeec140e47cc964c7b51b01cdd88b/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/11efeec140e47cc964c7b51b01cdd88b/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/0341135a479a1847e64dc720fa73a9d9/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/0341135a479a1847e64dc720fa73a9d9/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8b0cce3f36a1c28e7df6e72849a13547/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8b0cce3f36a1c28e7df6e72849a13547/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/1d4efdb868696ea36efd004abeb8239d/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/1d4efdb868696ea36efd004abeb8239d/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/9dc01f80be5d003ac3d9f81c085f13fd/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/9dc01f80be5d003ac3d9f81c085f13fd/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.github.agorabuilder:native-full-sdk:3.5.0.3] /home/osama/.gradle/caches/transforms-2/files-2.1/79ff711f3f1c602ddaa125d9233b9f3f/jetified-native-full-sdk-3.5.0.3/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.agorabuilder:native-full-sdk:3.5.0.3] /home/osama/.gradle/caches/transforms-2/files-2.1/79ff711f3f1c602ddaa125d9233b9f3f/jetified-native-full-sdk-3.5.0.3/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/073fa8f73d9db3fc6f27ad8d002d7cd7/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/073fa8f73d9db3fc6f27ad8d002d7cd7/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
-MERGED from [io.grpc:grpc-android:1.41.0] /home/osama/.gradle/caches/transforms-2/files-2.1/adf0ad4e5cb0b2226216b1b3470356be/jetified-grpc-android-1.41.0/AndroidManifest.xml:7:5-9:41
-MERGED from [io.grpc:grpc-android:1.41.0] /home/osama/.gradle/caches/transforms-2/files-2.1/adf0ad4e5cb0b2226216b1b3470356be/jetified-grpc-android-1.41.0/AndroidManifest.xml:7:5-9:41
-INJECTED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/debug/AndroidManifest.xml
-INJECTED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/debug/AndroidManifest.xml
+INJECTED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml
+MERGED from [:firebase_auth] /home/osama/AndroidStudioProjects/btech_project/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth] /home/osama/AndroidStudioProjects/btech_project/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_storage] /home/osama/AndroidStudioProjects/btech_project/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_storage] /home/osama/AndroidStudioProjects/btech_project/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] /home/osama/AndroidStudioProjects/btech_project/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] /home/osama/AndroidStudioProjects/btech_project/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /home/osama/AndroidStudioProjects/btech_project/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /home/osama/AndroidStudioProjects/btech_project/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] /home/osama/AndroidStudioProjects/btech_project/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] /home/osama/AndroidStudioProjects/btech_project/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] /home/osama/AndroidStudioProjects/btech_project/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] /home/osama/AndroidStudioProjects/btech_project/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/btech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:6:5-8:41
+MERGED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/btech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:6:5-8:41
+MERGED from [:fluttertoast] /home/osama/AndroidStudioProjects/btech_project/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:fluttertoast] /home/osama/AndroidStudioProjects/btech_project/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:permission_handler] /home/osama/AndroidStudioProjects/btech_project/build/permission_handler/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:permission_handler] /home/osama/AndroidStudioProjects/btech_project/build/permission_handler/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [androidx.window:window-java:1.0.0-beta04] /home/osama/.gradle/caches/transforms-2/files-2.1/a3b86b42fafb2019c6d99a912992ce19/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window-java:1.0.0-beta04] /home/osama/.gradle/caches/transforms-2/files-2.1/a3b86b42fafb2019c6d99a912992ce19/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window:1.0.0-beta04] /home/osama/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0-beta04] /home/osama/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-analytics:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/562d7edd9822a51baef18c63d40be694/jetified-firebase-analytics-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/562d7edd9822a51baef18c63d40be694/jetified-firebase-analytics-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.multidex:multidex:2.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/02d04e6dfdbeb319e115f5728d226784/multidex-2.0.0/AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/02d04e6dfdbeb319e115f5728d226784/multidex-2.0.0/AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/50f63e17caca2b851f804bbbf7a394c2/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/50f63e17caca2b851f804bbbf7a394c2/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/9c369bd6abc3852663b4e5f4caccd1b1/jetified-firebase-storage-20.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/9c369bd6abc3852663b4e5f4caccd1b1/jetified-firebase-storage-20.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2ab5a2b7434f07ae65fd76eec1eb46d2/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2ab5a2b7434f07ae65fd76eec1eb46d2/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/c0fc708caaa4589bc487805750ad8901/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/c0fc708caaa4589bc487805750ad8901/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /home/osama/.gradle/caches/transforms-2/files-2.1/14618db3d0804b47739e3f1a54d17be3/jetified-firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /home/osama/.gradle/caches/transforms-2/files-2.1/14618db3d0804b47739e3f1a54d17be3/jetified-firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/544bb83cdfcc0c9ba48353730451aa98/jetified-firebase-installations-17.0.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/544bb83cdfcc0c9ba48353730451aa98/jetified-firebase-installations-17.0.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e9bee4f77b660f6ff89d0b5e41260363/jetified-firebase-common-20.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e9bee4f77b660f6ff89d0b5e41260363/jetified-firebase-common-20.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.0] /home/osama/.gradle/caches/transforms-2/files-2.1/b7a4bedb3ae5643a7a7af8bc9a9af596/exifinterface-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.0] /home/osama/.gradle/caches/transforms-2/files-2.1/b7a4bedb3ae5643a7a7af8bc9a9af596/exifinterface-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /home/osama/.gradle/caches/transforms-2/files-2.1/1579bd1641f52804fc09caeaeac50d9c/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /home/osama/.gradle/caches/transforms-2/files-2.1/1579bd1641f52804fc09caeaeac50d9c/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/b9f3ea16de2ef1ca92c5362ec604ec66/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/b9f3ea16de2ef1ca92c5362ec604ec66/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database-collection:18.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/c24d54ef33d65d383b557ca6eddafa0a/jetified-firebase-database-collection-18.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/c24d54ef33d65d383b557ca6eddafa0a/jetified-firebase-database-collection-18.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/6627ebe7ef94065a47e7e8e9d66c6a9d/jetified-play-services-base-17.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/6627ebe7ef94065a47e7e8e9d66c6a9d/jetified-play-services-base-17.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/22fb41c30f31ef191ee71db2f1f61b9e/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/22fb41c30f31ef191ee71db2f1f61b9e/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/f9d6cf427a3ff2f6c4c12d3931a573b4/jetified-play-services-measurement-sdk-20.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/f9d6cf427a3ff2f6c4c12d3931a573b4/jetified-play-services-measurement-sdk-20.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/51a20ee1b7202dae7071318eb86abc38/jetified-firebase-installations-interop-17.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/51a20ee1b7202dae7071318eb86abc38/jetified-firebase-installations-interop-17.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8a93bc0e3a44e9adb6e6337d9f0f03d5/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8a93bc0e3a44e9adb6e6337d9f0f03d5/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5286d39c3abc3b20154f7cd1386effe5/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5286d39c3abc3b20154f7cd1386effe5/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/96b161643d9a3b2628aa2436c5d936fe/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/96b161643d9a3b2628aa2436c5d936fe/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/fcda7cc943836a99b4f7278997cd4bef/jetified-play-services-measurement-sdk-api-20.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/fcda7cc943836a99b4f7278997cd4bef/jetified-play-services-measurement-sdk-api-20.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e2d8f37e6c36df5a18768d19935d40a5/jetified-play-services-measurement-base-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e2d8f37e6c36df5a18768d19935d40a5/jetified-play-services-measurement-base-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d20e113c476e21905d86371c7fcd3075/jetified-play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d20e113c476e21905d86371c7fcd3075/jetified-play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/f073652a2b0a9b6b460323e1b4f086ac/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/f073652a2b0a9b6b460323e1b4f086ac/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/0c11252d9d87559920ca1b1a0bcd2692/jetified-play-services-basement-17.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/0c11252d9d87559920ca1b1a0bcd2692/jetified-play-services-basement-17.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/fcfa9c07e15be26ded9661d0cde5236d/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/fcfa9c07e15be26ded9661d0cde5236d/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/ec20f7242759cfe0d6237ced59ef1a02/browser-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/ec20f7242759cfe0d6237ced59ef1a02/browser-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/1aaca2244d3852aa3051f6ec5e863d3f/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/1aaca2244d3852aa3051f6ec5e863d3f/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/55efa78fe7dd5340c3b16a9e76ef0926/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/55efa78fe7dd5340c3b16a9e76ef0926/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/b4f7568fea2f511d767829dd5b644d2f/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/b4f7568fea2f511d767829dd5b644d2f/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e76984245f77d39c38f4d76388592dc0/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e76984245f77d39c38f4d76388592dc0/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d163e2127d8958c9002b4147c4b31dec/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d163e2127d8958c9002b4147c4b31dec/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5cf36af8c665794dec2262fc6fa16b40/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5cf36af8c665794dec2262fc6fa16b40/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/ce3fae280668b0503a293c526ec9328a/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/ce3fae280668b0503a293c526ec9328a/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/aee3a20ed22eaa6ce58c2a70407c377c/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/aee3a20ed22eaa6ce58c2a70407c377c/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5f88a748e85d2ef9c8213280277cced9/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5f88a748e85d2ef9c8213280277cced9/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8d97c12dfdb8c2847306c37b87aa48f1/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8d97c12dfdb8c2847306c37b87aa48f1/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/7df58ccd2ccc82bc81039404188d6bbf/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/7df58ccd2ccc82bc81039404188d6bbf/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.6.0] /home/osama/.gradle/caches/transforms-2/files-2.1/14b93615368c2249f1830e26ca064ab5/core-1.6.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.6.0] /home/osama/.gradle/caches/transforms-2/files-2.1/14b93615368c2249f1830e26ca064ab5/core-1.6.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/osama/.gradle/caches/transforms-2/files-2.1/0fcc2619fc2d4a04b76c2cc8424c6b65/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/osama/.gradle/caches/transforms-2/files-2.1/0fcc2619fc2d4a04b76c2cc8424c6b65/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8aaf6886d114b38b49bc161f6fefc2ae/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8aaf6886d114b38b49bc161f6fefc2ae/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/ed337045782a87292c529ce55dd5bf4f/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/ed337045782a87292c529ce55dd5bf4f/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/0e73c827728350d15714a2d8006721b6/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/0e73c827728350d15714a2d8006721b6/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/3b4820e24d46e21c89efa32f5c2d6e2e/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/3b4820e24d46e21c89efa32f5c2d6e2e/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d303dc6bb1b59f5c94a63e6083442da7/jetified-firebase-components-17.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d303dc6bb1b59f5c94a63e6083442da7/jetified-firebase-components-17.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5408995d19686f9d35f8a810d9d7986f/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5408995d19686f9d35f8a810d9d7986f/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/osama/.gradle/caches/transforms-2/files-2.1/0bd53d61454f05a360ed50c12e1c0f57/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/osama/.gradle/caches/transforms-2/files-2.1/0bd53d61454f05a360ed50c12e1c0f57/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2a7f1fd9e53de4d9b5d232b69f7dc1ae/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2a7f1fd9e53de4d9b5d232b69f7dc1ae/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e8863814c459b83896fb72460c5f5555/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e8863814c459b83896fb72460c5f5555/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/597222039f0715c7401267f68f1f9e7c/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/597222039f0715c7401267f68f1f9e7c/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/c5fc0789798e34bd45f9039f964c33eb/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/c5fc0789798e34bd45f9039f964c33eb/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/fe7136c18bf90ce15610c08732e73d45/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/fe7136c18bf90ce15610c08732e73d45/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/c08dcac29cefcadf912758ee4601aef8/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/c08dcac29cefcadf912758ee4601aef8/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.github.agorabuilder:native-full-sdk:3.5.0.3] /home/osama/.gradle/caches/transforms-2/files-2.1/453fd98f459bf16fe69f3190aa6f56bd/jetified-native-full-sdk-3.5.0.3/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.agorabuilder:native-full-sdk:3.5.0.3] /home/osama/.gradle/caches/transforms-2/files-2.1/453fd98f459bf16fe69f3190aa6f56bd/jetified-native-full-sdk-3.5.0.3/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2341977d1a91ba1cfe2b6d080a2fe8a6/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2341977d1a91ba1cfe2b6d080a2fe8a6/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.41.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5ee4d160e5fc9e437c7e45a34b511c13/jetified-grpc-android-1.41.0/AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.41.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5ee4d160e5fc9e437c7e45a34b511c13/jetified-grpc-android-1.41.0/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/7e5cb6c6f9437da119823e44c35d9b10/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/7e5cb6c6f9437da119823e44c35d9b10/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/debug/AndroidManifest.xml
+INJECTED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml
-		INJECTED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/debug/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/main/AndroidManifest.xml
-		INJECTED from /home/osama/AndroidStudioProjects/b_tech_project/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/osama/AndroidStudioProjects/btech_project/android/app/src/debug/AndroidManifest.xml
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [:firebase_auth] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_storage] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_storage] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:cloud_firestore] /home/osama/AndroidStudioProjects/b_tech_project/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:cloud_firestore] /home/osama/AndroidStudioProjects/b_tech_project/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_core] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_core] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:74:9-80:19
-MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:74:9-80:19
-MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/875fba2a3c7d150fb639a449876b754f/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:17:9-23:19
-MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/875fba2a3c7d150fb639a449876b754f/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:17:9-23:19
-MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/aac17191751d9819c4ba4efa4c4713d8/jetified-firebase-storage-20.0.0/AndroidManifest.xml:30:9-36:19
-MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/aac17191751d9819c4ba4efa4c4713d8/jetified-firebase-storage-20.0.0/AndroidManifest.xml:30:9-36:19
-MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d8b5451fc82c883313b73938aa29c281/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:27:9-33:19
-MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d8b5451fc82c883313b73938aa29c281/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:27:9-33:19
-MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2b663374f2a3beef67e4fc09532fc190/jetified-firebase-installations-17.0.0/AndroidManifest.xml:15:9-21:19
-MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2b663374f2a3beef67e4fc09532fc190/jetified-firebase-installations-17.0.0/AndroidManifest.xml:15:9-21:19
-MERGED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e8c12af64c0d197211b7d090cb61cdf8/jetified-firebase-common-20.0.0/AndroidManifest.xml:33:9-37:35
-MERGED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e8c12af64c0d197211b7d090cb61cdf8/jetified-firebase-common-20.0.0/AndroidManifest.xml:33:9-37:35
+ADDED from [:firebase_auth] /home/osama/AndroidStudioProjects/btech_project/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_storage] /home/osama/AndroidStudioProjects/btech_project/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_storage] /home/osama/AndroidStudioProjects/btech_project/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] /home/osama/AndroidStudioProjects/btech_project/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] /home/osama/AndroidStudioProjects/btech_project/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] /home/osama/AndroidStudioProjects/btech_project/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] /home/osama/AndroidStudioProjects/btech_project/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:74:9-80:19
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:74:9-80:19
+MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/50f63e17caca2b851f804bbbf7a394c2/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:17:9-23:19
+MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/50f63e17caca2b851f804bbbf7a394c2/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:17:9-23:19
+MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/9c369bd6abc3852663b4e5f4caccd1b1/jetified-firebase-storage-20.0.0/AndroidManifest.xml:30:9-36:19
+MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/9c369bd6abc3852663b4e5f4caccd1b1/jetified-firebase-storage-20.0.0/AndroidManifest.xml:30:9-36:19
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2ab5a2b7434f07ae65fd76eec1eb46d2/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2ab5a2b7434f07ae65fd76eec1eb46d2/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/544bb83cdfcc0c9ba48353730451aa98/jetified-firebase-installations-17.0.0/AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/544bb83cdfcc0c9ba48353730451aa98/jetified-firebase-installations-17.0.0/AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e9bee4f77b660f6ff89d0b5e41260363/jetified-firebase-common-20.0.0/AndroidManifest.xml:33:9-37:35
+MERGED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e9bee4f77b660f6ff89d0b5e41260363/jetified-firebase-common-20.0.0/AndroidManifest.xml:33:9-37:35
 	android:exported
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:76:13-37
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:76:13-37
 	tools:targetApi
-		ADDED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e8c12af64c0d197211b7d090cb61cdf8/jetified-firebase-common-20.0.0/AndroidManifest.xml:37:13-32
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e9bee4f77b660f6ff89d0b5e41260363/jetified-firebase-common-20.0.0/AndroidManifest.xml:37:13-32
 	android:directBootAware
-		ADDED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e8c12af64c0d197211b7d090cb61cdf8/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e9bee4f77b660f6ff89d0b5e41260363/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
 	android:name
-		ADDED from [:firebase_auth] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+		ADDED from [:firebase_auth] /home/osama/AndroidStudioProjects/btech_project/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar
-ADDED from [:firebase_auth] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_auth] /home/osama/AndroidStudioProjects/btech_project/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_auth] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_auth] /home/osama/AndroidStudioProjects/btech_project/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_auth] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+		ADDED from [:firebase_auth] /home/osama/AndroidStudioProjects/btech_project/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_storage] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_storage] /home/osama/AndroidStudioProjects/btech_project/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_storage] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_storage] /home/osama/AndroidStudioProjects/btech_project/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_storage] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-126
+		ADDED from [:firebase_storage] /home/osama/AndroidStudioProjects/btech_project/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-126
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar
-ADDED from [:cloud_firestore] /home/osama/AndroidStudioProjects/b_tech_project/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:cloud_firestore] /home/osama/AndroidStudioProjects/btech_project/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:cloud_firestore] /home/osama/AndroidStudioProjects/b_tech_project/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:cloud_firestore] /home/osama/AndroidStudioProjects/btech_project/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:cloud_firestore] /home/osama/AndroidStudioProjects/b_tech_project/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
+		ADDED from [:cloud_firestore] /home/osama/AndroidStudioProjects/btech_project/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar
-ADDED from [:firebase_core] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_core] /home/osama/AndroidStudioProjects/btech_project/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_core] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_core] /home/osama/AndroidStudioProjects/btech_project/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_core] /home/osama/AndroidStudioProjects/b_tech_project/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+		ADDED from [:firebase_core] /home/osama/AndroidStudioProjects/btech_project/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
 provider#io.flutter.plugins.imagepicker.ImagePickerFileProvider
-ADDED from [:image_picker] /home/osama/AndroidStudioProjects/b_tech_project/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-16:20
+ADDED from [:image_picker] /home/osama/AndroidStudioProjects/btech_project/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-16:20
 	android:grantUriPermissions
-		ADDED from [:image_picker] /home/osama/AndroidStudioProjects/b_tech_project/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-47
+		ADDED from [:image_picker] /home/osama/AndroidStudioProjects/btech_project/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-47
 	android:authorities
-		ADDED from [:image_picker] /home/osama/AndroidStudioProjects/b_tech_project/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-74
+		ADDED from [:image_picker] /home/osama/AndroidStudioProjects/btech_project/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-74
 	android:exported
-		ADDED from [:image_picker] /home/osama/AndroidStudioProjects/b_tech_project/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-37
+		ADDED from [:image_picker] /home/osama/AndroidStudioProjects/btech_project/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-37
 	android:name
-		ADDED from [:image_picker] /home/osama/AndroidStudioProjects/b_tech_project/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-82
+		ADDED from [:image_picker] /home/osama/AndroidStudioProjects/btech_project/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-82
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:image_picker] /home/osama/AndroidStudioProjects/b_tech_project/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-15:75
+ADDED from [:image_picker] /home/osama/AndroidStudioProjects/btech_project/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-15:75
 	android:resource
-		ADDED from [:image_picker] /home/osama/AndroidStudioProjects/b_tech_project/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-72
+		ADDED from [:image_picker] /home/osama/AndroidStudioProjects/btech_project/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-72
 	android:name
-		ADDED from [:image_picker] /home/osama/AndroidStudioProjects/b_tech_project/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:17-67
+		ADDED from [:image_picker] /home/osama/AndroidStudioProjects/btech_project/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:17-67
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/b_tech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:17:5-76
+ADDED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/btech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:17:5-76
 	android:name
-		ADDED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/b_tech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:17:22-73
+		ADDED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/btech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:17:22-73
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/b_tech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:18:5-80
+ADDED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/btech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:18:5-80
 	android:name
-		ADDED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/b_tech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:18:22-77
+		ADDED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/btech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:18:22-77
 uses-permission#android.permission.READ_PRIVILEGED_PHONE_STATE
-ADDED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/b_tech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:19:5-21:47
+ADDED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/btech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:19:5-21:47
 	tools:ignore
-		ADDED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/b_tech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:21:9-44
+		ADDED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/btech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:21:9-44
 	android:name
-		ADDED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/b_tech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:20:9-70
+		ADDED from [:agora_rtc_engine] /home/osama/AndroidStudioProjects/btech_project/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:20:9-70
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0-beta04] /home/osama/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] /home/osama/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] /home/osama/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0-beta04] /home/osama/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] /home/osama/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] /home/osama/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
 activity#com.google.firebase.auth.internal.GenericIdpActivity
-ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:27:9-44:20
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:27:9-44:20
 	android:excludeFromRecents
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:29:13-46
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:29:13-46
 	android:launchMode
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:31:13-44
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:31:13-44
 	android:exported
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:30:13-36
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:30:13-36
 	android:theme
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:32:13-72
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:32:13-72
 	android:name
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:28:13-80
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:28:13-80
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:genericidp
-ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:33:13-43:29
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:33:13-43:29
 action#android.intent.action.VIEW
-ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:34:17-69
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:34:17-69
 	android:name
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:34:25-66
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:34:25-66
 category#android.intent.category.DEFAULT
-ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:17-76
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:17-76
 	android:name
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:27-73
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:27-73
 category#android.intent.category.BROWSABLE
-ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:37:17-78
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:37:17-78
 	android:name
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:37:27-75
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:37:27-75
 data
-ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:39:17-42:51
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:39:17-42:51
 	android:path
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:41:21-37
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:41:21-37
 	android:host
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:40:21-49
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:40:21-49
 	android:scheme
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:42:21-48
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:42:21-48
 activity#com.google.firebase.auth.internal.RecaptchaActivity
-ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:45:9-62:20
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:45:9-62:20
 	android:excludeFromRecents
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:47:13-46
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:47:13-46
 	android:launchMode
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:49:13-44
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:49:13-44
 	android:exported
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:48:13-36
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:48:13-36
 	android:theme
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:50:13-72
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:50:13-72
 	android:name
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:46:13-79
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:46:13-79
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:recaptcha
-ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:51:13-61:29
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:51:13-61:29
 service#com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService
-ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:64:9-73:19
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:64:9-73:19
 	android:enabled
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:66:13-35
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:66:13-35
 	android:exported
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:67:13-37
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:67:13-37
 	android:name
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:65:13-101
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:65:13-101
 intent-filter#action:name:com.google.firebase.auth.api.gms.service.START+category:name:android.intent.category.DEFAULT
-ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:68:13-72:29
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:68:13-72:29
 action#com.google.firebase.auth.api.gms.service.START
-ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:69:17-89
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:69:17-89
 	android:name
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:69:25-86
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:69:25-86
 meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
-ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:77:13-79:85
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:77:13-79:85
 	android:value
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:79:17-82
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:79:17-82
 	android:name
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:78:17-109
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/osama/.gradle/caches/transforms-2/files-2.1/a019e4e63ad7a70d0f2aebf4e86fe327/jetified-firebase-auth-21.0.1/AndroidManifest.xml:78:17-109
 meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
-ADDED from [com.google.firebase:firebase-firestore:24.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/875fba2a3c7d150fb639a449876b754f/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:20:13-22:85
+ADDED from [com.google.firebase:firebase-firestore:24.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/50f63e17caca2b851f804bbbf7a394c2/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:20:13-22:85
 	android:value
-		ADDED from [com.google.firebase:firebase-firestore:24.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/875fba2a3c7d150fb639a449876b754f/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:22:17-82
+		ADDED from [com.google.firebase:firebase-firestore:24.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/50f63e17caca2b851f804bbbf7a394c2/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:22:17-82
 	android:name
-		ADDED from [com.google.firebase:firebase-firestore:24.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/875fba2a3c7d150fb639a449876b754f/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:21:17-111
+		ADDED from [com.google.firebase:firebase-firestore:24.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/50f63e17caca2b851f804bbbf7a394c2/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:21:17-111
 meta-data#com.google.firebase.components:com.google.firebase.storage.StorageRegistrar
-ADDED from [com.google.firebase:firebase-storage:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/aac17191751d9819c4ba4efa4c4713d8/jetified-firebase-storage-20.0.0/AndroidManifest.xml:33:13-35:85
+ADDED from [com.google.firebase:firebase-storage:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/9c369bd6abc3852663b4e5f4caccd1b1/jetified-firebase-storage-20.0.0/AndroidManifest.xml:33:13-35:85
 	android:value
-		ADDED from [com.google.firebase:firebase-storage:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/aac17191751d9819c4ba4efa4c4713d8/jetified-firebase-storage-20.0.0/AndroidManifest.xml:35:17-82
+		ADDED from [com.google.firebase:firebase-storage:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/9c369bd6abc3852663b4e5f4caccd1b1/jetified-firebase-storage-20.0.0/AndroidManifest.xml:35:17-82
 	android:name
-		ADDED from [com.google.firebase:firebase-storage:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/aac17191751d9819c4ba4efa4c4713d8/jetified-firebase-storage-20.0.0/AndroidManifest.xml:34:17-107
+		ADDED from [com.google.firebase:firebase-storage:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/9c369bd6abc3852663b4e5f4caccd1b1/jetified-firebase-storage-20.0.0/AndroidManifest.xml:34:17-107
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d8b5451fc82c883313b73938aa29c281/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:24:5-68
-MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8450057caa35aac30a045729c438a3d4/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8450057caa35aac30a045729c438a3d4/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d69af976ec59be4fe5c1231889421a1e/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d69af976ec59be4fe5c1231889421a1e/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d08bc3c199a6063c33196b5ac214f718/jetified-play-services-measurement-sdk-api-20.0.0/AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d08bc3c199a6063c33196b5ac214f718/jetified-play-services-measurement-sdk-api-20.0.0/AndroidManifest.xml:25:5-68
+ADDED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2ab5a2b7434f07ae65fd76eec1eb46d2/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/22fb41c30f31ef191ee71db2f1f61b9e/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/22fb41c30f31ef191ee71db2f1f61b9e/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5286d39c3abc3b20154f7cd1386effe5/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5286d39c3abc3b20154f7cd1386effe5/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/fcda7cc943836a99b4f7278997cd4bef/jetified-play-services-measurement-sdk-api-20.0.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/fcda7cc943836a99b4f7278997cd4bef/jetified-play-services-measurement-sdk-api-20.0.0/AndroidManifest.xml:25:5-68
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d8b5451fc82c883313b73938aa29c281/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:24:22-65
+		ADDED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2ab5a2b7434f07ae65fd76eec1eb46d2/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:24:22-65
 meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
-ADDED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d8b5451fc82c883313b73938aa29c281/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:30:13-32:85
+ADDED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2ab5a2b7434f07ae65fd76eec1eb46d2/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:30:13-32:85
 	android:value
-		ADDED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d8b5451fc82c883313b73938aa29c281/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:32:17-82
+		ADDED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2ab5a2b7434f07ae65fd76eec1eb46d2/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:32:17-82
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d8b5451fc82c883313b73938aa29c281/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:31:17-139
+		ADDED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2ab5a2b7434f07ae65fd76eec1eb46d2/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:31:17-139
 meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
-ADDED from [com.google.firebase:firebase-installations:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2b663374f2a3beef67e4fc09532fc190/jetified-firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
+ADDED from [com.google.firebase:firebase-installations:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/544bb83cdfcc0c9ba48353730451aa98/jetified-firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
 	android:value
-		ADDED from [com.google.firebase:firebase-installations:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2b663374f2a3beef67e4fc09532fc190/jetified-firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
+		ADDED from [com.google.firebase:firebase-installations:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/544bb83cdfcc0c9ba48353730451aa98/jetified-firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
 	android:name
-		ADDED from [com.google.firebase:firebase-installations:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/2b663374f2a3beef67e4fc09532fc190/jetified-firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
+		ADDED from [com.google.firebase:firebase-installations:17.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/544bb83cdfcc0c9ba48353730451aa98/jetified-firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e8c12af64c0d197211b7d090cb61cdf8/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+ADDED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e9bee4f77b660f6ff89d0b5e41260363/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e8c12af64c0d197211b7d090cb61cdf8/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e9bee4f77b660f6ff89d0b5e41260363/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e8c12af64c0d197211b7d090cb61cdf8/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e9bee4f77b660f6ff89d0b5e41260363/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
 	android:directBootAware
-		ADDED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e8c12af64c0d197211b7d090cb61cdf8/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e9bee4f77b660f6ff89d0b5e41260363/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e8c12af64c0d197211b7d090cb61cdf8/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e9bee4f77b660f6ff89d0b5e41260363/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
 	android:name
-		ADDED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e8c12af64c0d197211b7d090cb61cdf8/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/e9bee4f77b660f6ff89d0b5e41260363/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/0813e45a0b3806629b40dbeb70c75a60/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+ADDED from [com.google.android.gms:play-services-base:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/6627ebe7ef94065a47e7e8e9d66c6a9d/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/0813e45a0b3806629b40dbeb70c75a60/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/6627ebe7ef94065a47e7e8e9d66c6a9d/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/0813e45a0b3806629b40dbeb70c75a60/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/6627ebe7ef94065a47e7e8e9d66c6a9d/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/0813e45a0b3806629b40dbeb70c75a60/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/6627ebe7ef94065a47e7e8e9d66c6a9d/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
 uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
-ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8450057caa35aac30a045729c438a3d4/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:26:5-110
-MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d69af976ec59be4fe5c1231889421a1e/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:26:5-110
-MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/d69af976ec59be4fe5c1231889421a1e/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:26:5-110
+ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/22fb41c30f31ef191ee71db2f1f61b9e/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5286d39c3abc3b20154f7cd1386effe5/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/5286d39c3abc3b20154f7cd1386effe5/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:26:5-110
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8450057caa35aac30a045729c438a3d4/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:26:22-107
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/22fb41c30f31ef191ee71db2f1f61b9e/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:26:22-107
 receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8450057caa35aac30a045729c438a3d4/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:29:9-33:20
+ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/22fb41c30f31ef191ee71db2f1f61b9e/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:29:9-33:20
 	android:enabled
-		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8450057caa35aac30a045729c438a3d4/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:31:13-35
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/22fb41c30f31ef191ee71db2f1f61b9e/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:31:13-35
 	android:exported
-		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8450057caa35aac30a045729c438a3d4/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:32:13-37
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/22fb41c30f31ef191ee71db2f1f61b9e/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8450057caa35aac30a045729c438a3d4/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:30:13-85
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/22fb41c30f31ef191ee71db2f1f61b9e/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:30:13-85
 service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8450057caa35aac30a045729c438a3d4/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:35:9-38:40
+ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/22fb41c30f31ef191ee71db2f1f61b9e/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:35:9-38:40
 	android:enabled
-		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8450057caa35aac30a045729c438a3d4/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:37:13-35
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/22fb41c30f31ef191ee71db2f1f61b9e/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:37:13-35
 	android:exported
-		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8450057caa35aac30a045729c438a3d4/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:38:13-37
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/22fb41c30f31ef191ee71db2f1f61b9e/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:38:13-37
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8450057caa35aac30a045729c438a3d4/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:36:13-84
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/22fb41c30f31ef191ee71db2f1f61b9e/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:36:13-84
 service#com.google.android.gms.measurement.AppMeasurementJobService
-ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8450057caa35aac30a045729c438a3d4/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:39:9-43:72
+ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/22fb41c30f31ef191ee71db2f1f61b9e/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:39:9-43:72
 	android:enabled
-		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8450057caa35aac30a045729c438a3d4/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:41:13-35
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/22fb41c30f31ef191ee71db2f1f61b9e/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:41:13-35
 	android:exported
-		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8450057caa35aac30a045729c438a3d4/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:42:13-37
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/22fb41c30f31ef191ee71db2f1f61b9e/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:42:13-37
 	android:permission
-		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8450057caa35aac30a045729c438a3d4/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:43:13-69
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/22fb41c30f31ef191ee71db2f1f61b9e/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:43:13-69
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/8450057caa35aac30a045729c438a3d4/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:40:13-87
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/osama/.gradle/caches/transforms-2/files-2.1/22fb41c30f31ef191ee71db2f1f61b9e/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:40:13-87
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/14e561dfe998324f0993f7eed2935f20/jetified-play-services-basement-17.1.0/AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/0c11252d9d87559920ca1b1a0bcd2692/jetified-play-services-basement-17.1.0/AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/14e561dfe998324f0993f7eed2935f20/jetified-play-services-basement-17.1.0/AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/0c11252d9d87559920ca1b1a0bcd2692/jetified-play-services-basement-17.1.0/AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/14e561dfe998324f0993f7eed2935f20/jetified-play-services-basement-17.1.0/AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:17.1.0] /home/osama/.gradle/caches/transforms-2/files-2.1/0c11252d9d87559920ca1b1a0bcd2692/jetified-play-services-basement-17.1.0/AndroidManifest.xml:24:13-58

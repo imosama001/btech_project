@@ -36,110 +36,107 @@ class _HomePageState extends State<HomePage>
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return MaterialApp(
-      home: SafeArea(
-        child: Scaffold(
-          appBar: AppBar(
-            leading: Builder(
-              builder: (context) => IconButton(
-                icon: const Icon(Icons.menu),
-                onPressed: () => Scaffold.of(context).openDrawer(),
-              ),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          leading: Builder(
+            builder: (context) => IconButton(
+              icon: const Icon(Icons.menu),
+              onPressed: () => Scaffold.of(context).openDrawer(),
             ),
-            backgroundColor: Colors.amber,
           ),
-          drawer: const MyDrawer(),
-          body: TabBarView(
-            controller: _tabController,
-            children: [
-              SingleChildScrollView(
-                //padding: EdgeInsets.only(left: size.width * .04),
-                child: SafeArea(
-                  child: Column(
-                    children: [
-                      SizedBox(height: size.height * .025),
-                      // CircleAvatar(
-                      //   radius: size.width * .15,
-                      //   backgroundImage: AssetImage('images/profile.jpeg'),
-                      // ),
-                      // Text("P_TYPE"),
-                      // Text("Discover Your True Self"),
-                      HomePageCard(
-                          cardDescriptionText: "Need Help with a Rough Day?",
-                          image: Image.asset('images/rough.jpg'),
-                          cardString: "TAKE UP A RESCUE",
-                          onButtonPressed: () {}),
-                      SizedBox(
-                        height: size.height * .025,
-                      ),
-                      HomePageCard(
-                          cardDescriptionText: "Want To Enhance Poductivity",
-                          image: Image.asset('images/productive.jpg'),
-                          cardString: "START YOUR JOURNEY",
-                          onButtonPressed: () {}),
-                      SizedBox(
-                        height: size.height * .025,
-                      ),
-                      HomePageCard(
-                          cardDescriptionText:
-                              "Need a Counselor To Help You Out",
-                          image: Image.asset('images/counselor.jpg'),
-                          cardString: "CONSULT A COUNSELOR",
-                          onButtonPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => CounselorListPage(
-                                    // doctor: Doctor(
-                                    //     firstName: "Peter",
-                                    //     lastName: "Pane",
-                                    //     image: const Image(
-                                    //       image: AssetImage('mathew.png'),
-                                    //     ),
-                                    //     type: "type",
-                                    //     rating: 4.5),
-                                    ),
-                              ),
-                            );
-                          }),
-                      SizedBox(height: size.height * .025),
-                    ],
-                  ),
+          backgroundColor: Colors.amber,
+        ),
+        drawer: const MyDrawer(),
+        body: TabBarView(
+          controller: _tabController,
+          children: [
+            SingleChildScrollView(
+              //padding: EdgeInsets.only(left: size.width * .04),
+              child: SafeArea(
+                child: Column(
+                  children: [
+                    SizedBox(height: size.height * .025),
+                    // CircleAvatar(
+                    //   radius: size.width * .15,
+                    //   backgroundImage: AssetImage('images/profile.jpeg'),
+                    // ),
+                    // Text("P_TYPE"),
+                    // Text("Discover Your True Self"),
+                    HomePageCard(
+                        cardDescriptionText: "Need Help with a Rough Day?",
+                        image: Image.asset('images/rough.jpg'),
+                        cardString: "TAKE UP A RESCUE",
+                        onButtonPressed: () {}),
+                    SizedBox(
+                      height: size.height * .025,
+                    ),
+                    HomePageCard(
+                        cardDescriptionText: "Want To Enhance Poductivity",
+                        image: Image.asset('images/productive.jpg'),
+                        cardString: "START YOUR JOURNEY",
+                        onButtonPressed: () {}),
+                    SizedBox(
+                      height: size.height * .025,
+                    ),
+                    HomePageCard(
+                        cardDescriptionText: "Need a Counselor To Help You Out",
+                        image: Image.asset('images/counselor.jpg'),
+                        cardString: "CONSULT A COUNSELOR",
+                        onButtonPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => CounselorListPage(
+                                  // doctor: Doctor(
+                                  //     firstName: "Peter",
+                                  //     lastName: "Pane",
+                                  //     image: const Image(
+                                  //       image: AssetImage('mathew.png'),
+                                  //     ),
+                                  //     type: "type",
+                                  //     rating: 4.5),
+                                  ),
+                            ),
+                          );
+                        }),
+                    SizedBox(height: size.height * .025),
+                  ],
                 ),
               ),
-              const ChatPage(),
-              const Text(
-                'Index 2: My Bookings',
-                style: optionStyle,
-              ),
-              SettingPage(),
-            ],
-          ),
-          bottomNavigationBar: BottomNavigationBar(
-            backgroundColor: Colors.black,
-            items: const <BottomNavigationBarItem>[
-              BottomNavigationBarItem(
-                icon: Icon(Icons.home),
-                label: 'Home',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(Icons.chat),
-                label: 'Chats',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(FontAwesomeIcons.calendarCheck),
-                label: 'Bookings',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(Icons.settings),
-                label: 'Settings',
-              ),
-            ],
-            currentIndex: _tabController.index,
-            selectedItemColor: Colors.amber[800],
-            unselectedItemColor: Colors.grey,
-            onTap: _onItemTapped,
-          ),
+            ),
+            const ChatPage(),
+            const Text(
+              'Index 2: My Bookings',
+              style: optionStyle,
+            ),
+            SettingPage(),
+          ],
+        ),
+        bottomNavigationBar: BottomNavigationBar(
+          backgroundColor: Colors.black,
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label: 'Home',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.chat),
+              label: 'Chats',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(FontAwesomeIcons.calendarCheck),
+              label: 'Bookings',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.settings),
+              label: 'Settings',
+            ),
+          ],
+          currentIndex: _tabController.index,
+          selectedItemColor: Colors.amber[800],
+          unselectedItemColor: Colors.grey,
+          onTap: _onItemTapped,
         ),
       ),
     );
