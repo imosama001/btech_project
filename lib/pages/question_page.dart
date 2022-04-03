@@ -1,5 +1,6 @@
 import 'package:b_tech_project/models/question_model.dart';
 import 'package:b_tech_project/models/questions.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 class QuestionPage extends StatefulWidget {
