@@ -106,6 +106,86 @@ List<Question> question = [
     selectedAnswerIndex: -1,
   ),
   Question(
+    questionText: 'Does it bother you more having things:',
+    answers: [
+      Answer(trait: 'J', text: 'Incomplete'),
+      Answer(trait: 'P', text: 'Completed'),
+    ],
+    selectedAnswerIndex: -1,
+  ),
+  Question(
+    questionText: 'In your social groups do you:',
+    answers: [
+      Answer(trait: 'E', text: 'Keep abreast of other’s happenings'),
+      Answer(trait: 'I', text: 'Get behind on the news'),
+    ],
+    selectedAnswerIndex: -1,
+  ),
+  Question(
+    questionText: 'In doing ordinary things are you morelikely to',
+    answers: [
+      Answer(trait: 'S', text: 'Do it the usual way'),
+      Answer(trait: 'N', text: 'Do it your own way'),
+    ],
+    selectedAnswerIndex: -1,
+  ),
+  Question(
+    questionText: 'Writers should:',
+    answers: [
+      Answer(trait: 'S', text: '“Say what they mean and mean what theysay”'),
+      Answer(trait: 'N', text: 'Express things more by use of analogy'),
+    ],
+    selectedAnswerIndex: -1,
+  ),
+  Question(
+    questionText: 'Which appeals to you more:',
+    answers: [
+      Answer(trait: 'T', text: 'Consistency of thought'),
+      Answer(trait: 'F', text: 'Harmonious human relationships'),
+    ],
+    selectedAnswerIndex: -1,
+  ),
+  Question(
+    questionText: 'Are you more comfortable in making:',
+    answers: [
+      Answer(trait: 'T', text: 'Logical judgments'),
+      Answer(trait: 'F', text: 'Value judgments'),
+    ],
+    selectedAnswerIndex: -1,
+  ),
+  Question(
+    questionText: 'Do you want things:',
+    answers: [
+      Answer(trait: 'J', text: 'Settled and decided'),
+      Answer(trait: 'P', text: 'Unsettled and undecided'),
+    ],
+    selectedAnswerIndex: -1,
+  ),
+  Question(
+    questionText: 'Would you say you are more:',
+    answers: [
+      Answer(trait: 'P', text: 'Easy-going'),
+      Answer(trait: 'J', text: 'Serious and determined'),
+    ],
+    selectedAnswerIndex: -1,
+  ),
+  Question(
+    questionText: 'In phoning do you:',
+    answers: [
+      Answer(trait: 'I', text: 'Rehearse what you’ll say'),
+      Answer(trait: 'E', text: 'Rarely question that it will all be said'),
+    ],
+    selectedAnswerIndex: -1,
+  ),
+  Question(
+    questionText: 'Facts:',
+    answers: [
+      Answer(trait: 'N', text: 'Illustrate principles'),
+      Answer(trait: 'S', text: '“Speak for themselves”'),
+    ],
+    selectedAnswerIndex: -1,
+  ),
+  Question(
     questionText: '',
     answers: [
       Answer(trait: '', text: ''),
@@ -113,12 +193,44 @@ List<Question> question = [
     ],
     selectedAnswerIndex: -1,
   ),
-  //   Question(
-  //   questionText: '',
-  //   answers: [
-  //     Answer(trait: '', text: ''),
-  //     Answer(trait: '', text: ''),
-  //   ],
-  //   selectedAnswerIndex: -1,
-  // ),
+  Question(
+    questionText: '',
+    answers: [
+      Answer(trait: '', text: ''),
+      Answer(trait: '', text: ''),
+    ],
+    selectedAnswerIndex: -1,
+  ),
+  Question(
+    questionText: '',
+    answers: [
+      Answer(trait: '', text: ''),
+      Answer(trait: '', text: ''),
+    ],
+    selectedAnswerIndex: -1,
+  ),
+  Question(
+    questionText: '',
+    answers: [
+      Answer(trait: '', text: ''),
+      Answer(trait: '', text: ''),
+    ],
+    selectedAnswerIndex: -1,
+  ),
+  Question(
+    questionText: '',
+    answers: [
+      Answer(trait: '', text: ''),
+      Answer(trait: '', text: ''),
+    ],
+    selectedAnswerIndex: -1,
+  ),
+  Question(
+    questionText: '',
+    answers: [
+      Answer(trait: '', text: ''),
+      Answer(trait: '', text: ''),
+    ],
+    selectedAnswerIndex: -1,
+  ),
 ];
