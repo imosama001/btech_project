@@ -136,6 +136,7 @@ class UserRepository with ChangeNotifier {
       'joinDate': Timestamp.now(),
       'isRequestAccepted': 'pending', // pending, accepted, rejected
       'isAdmin': false,
+      'isCounselor': false,
     }).then((value) {
       _appState = AppState.authenticated;
       notifyListeners();
@@ -181,13 +182,58 @@ class UserRepository with ChangeNotifier {
     TaskSnapshot taskSnapshot = await uploadTask.whenComplete(() => null);
     String imageUrl = await taskSnapshot.ref.getDownloadURL();
 
-    _firestore.collection('users').doc(_firebaseAuth.currentUser!.uid).update({
+    await _firestore
+        .collection('users')
+        .doc(_firebaseAuth.currentUser!.uid)
+        .update({
       'name': name,
       'address': address,
       // 'state': state,
       // 'country': country,
       'phoneNumber': phoneNumber,
       'photoUrl': imageUrl,
+    });
+  }
+
+  Future<void> addCounselorDetails({
+    required String location,
+    required String speciality,
+    required String yearOfExperience,
+    required String counselorDescription,
+  }) async {
+    await _firestore
+        .collection('users')
+        .doc(_firebaseAuth.currentUser!.uid)
+        .update({
+      'location': location,
+      'speciality': speciality,
+      'yearOfExperience': yearOfExperience,
+      'counselorDescription': counselorDescription,
+    });
+  }
+
+  Future<void> uploadCounselorCertificate({
+    required File image,
+  }) async {
+    Reference firebaseStorageRef = FirebaseStorage.instance
+        .ref()
+        .child('users')
+        .child('certificates')
+        .child(FirebaseAuth.instance.currentUser!.uid);
+
+    UploadTask uploadTask = firebaseStorageRef.putFile(image);
+
+    TaskSnapshot taskSnapshot = await uploadTask.whenComplete(() => null);
+    String certificateUrl = await taskSnapshot.ref.getDownloadURL();
+    await _firestore
+        .collection('users')
+        .doc(_firebaseAuth.currentUser!.uid)
+        .collection('attatchments')
+        .doc('certificates')
+        .set({
+      'certificateUrl': certificateUrl,
+    }).catchError((error) {
+      throw error;
     });
   }
 }

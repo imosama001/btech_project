@@ -1,5 +1,7 @@
+import 'package:b_tech_project/functions/mbti_calculations.dart';
 import 'package:b_tech_project/models/question_model.dart';
 import 'package:b_tech_project/models/questions.dart';
+import 'package:b_tech_project/pages/Personality_Page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
@@ -17,108 +19,7 @@ class _QuestionPageState extends State<QuestionPage> {
   List<Question> questions = question;
 
   int selectedQuestionIndex = 0;
-
-  /// traits variables
-  int I = 0;
-  int E = 0;
-  int S = 0;
-  int N = 0;
-  int T = 0;
-  int P = 0;
-  int F = 0;
-  int J = 0;
-
-  void incrementSelectedTrait(String trait) {
-    switch (trait) {
-      case "I":
-        I++;
-        break;
-      case "E":
-        E++;
-        break;
-      case "S":
-        S++;
-        break;
-      case "N":
-        N++;
-        break;
-      case "P":
-        P++;
-        break;
-      case "T":
-        T++;
-        break;
-      case "F":
-        F++;
-        break;
-      case "J":
-        J++;
-        break;
-    }
-  }
-
-  String findTrait(
-      {required int I,
-      required int E,
-      required int N,
-      required int S,
-      required int T,
-      required int F,
-      required int P,
-      required int J}) {
-    String personality_type = "";
-
-    if (I >= E)
-      personality_type += "I";
-    else
-      personality_type += "E";
-
-    if (N >= S)
-      personality_type += "N";
-    else
-      personality_type += "S";
-
-    if (F >= T)
-      personality_type += "F";
-    else
-      personality_type += "T";
-    if (P >= J)
-      personality_type += "P";
-    else
-      personality_type += "J";
-
-    return personality_type;
-  }
-
-  void finalSubmit() {
-    /// reset trait values
-    I = 0;
-    E = 0;
-    N = 0;
-    S = 0;
-    F = 0;
-    J = 0;
-    T = 0;
-    P = 0;
-
-    /// iterate through all questions and increment to relevant trait variable using incrementSelectedTrait(String trait)
-
-    for (Question question in questions) {
-      String trait = question.answers[question.selectedAnswerIndex].trait;
-      // print(trait);
-      incrementSelectedTrait(trait);
-    }
-
-    print("I= " + I.toString());
-    print("E= " + E.toString());
-    print("N= " + N.toString());
-    print("S= " + S.toString());
-    print("F= " + F.toString());
-    print("J= " + J.toString());
-    print("T= " + T.toString());
-    print("P= " + P.toString());
-    print(findTrait(I: I, E: E, N: N, S: S, T: T, F: F, P: P, J: J));
-  }
+  String PersonalityType = "";
 
   @override
   Widget build(BuildContext context) {
@@ -145,7 +46,7 @@ class _QuestionPageState extends State<QuestionPage> {
         });
       } else if (selectedQuestionIndex == questions.length - 1) {
         setState(() {
-          finalSubmit();
+          finalSubmit(context);
         });
       }
     }
