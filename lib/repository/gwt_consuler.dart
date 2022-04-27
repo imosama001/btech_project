@@ -8,9 +8,8 @@ Future<QuerySnapshot> getUsers({String? name}) {
   print('900' * 100);
   Query _query = usersget
       .collection('users')
-      .where("isAdmin", isEqualTo: "true")
-      .where("name", isNotEqualTo: _auth!.email);
-  print(_auth.email);
+      .where("isAdmin", isEqualTo: true)
+      .where("name", isNotEqualTo: _auth!.displayName);
   if (name != null) {
     _query = _query
         .where("name", isGreaterThanOrEqualTo: name)

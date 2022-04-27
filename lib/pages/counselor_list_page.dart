@@ -1,4 +1,5 @@
 import 'package:b_tech_project/repository/gwt_consuler.dart';
+import 'package:b_tech_project/repository/user_repository.dart';
 import 'package:b_tech_project/widgets/doctors_category_cell.dart';
 import 'package:b_tech_project/widgets/trd_cell.dart';
 import 'package:b_tech_project/widgets/counselor_hd_cell.dart';
@@ -37,19 +38,34 @@ class _CounselorListPageState extends State<CounselorListPage> {
     );
   }
 
+  bool isLoading = true;
+
   /// **********************************************
   /// LIFE CYCLE METHODS
   /// **********************************************
   @override
   void initState() {
     super.initState();
-    _hDoctors = _getHDoctors();
+    // _hDoctors = _getHDoctors();
     //_categories = _getCategories();
-    _trDoctors = _getHDoctors();
+    // _trDoctors = _getHDoctors();
   }
+
+  bool isDataLoaded = false;
 
   @override
   Widget build(BuildContext context) {
+    if (!isDataLoaded) {
+      _getHDoctors().then((doctorsList) {
+        _hDoctors = doctorsList;
+        _trDoctors = doctorsList;
+        setState(() {
+          isLoading = false;
+          isDataLoaded = true;
+        });
+      });
+    }
+    print(isDataLoaded);
     return Scaffold(
       appBar: AppBar(
         title: Text("Doc"),
@@ -59,36 +75,38 @@ class _CounselorListPageState extends State<CounselorListPage> {
 
       body: SingleChildScrollView(
         physics: const BouncingScrollPhysics(),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            CustomTextField2(
-                controller: _searchFieldTextEditingController,
-                hintText: "Search",
-                obscureText: false,
-                onEditingComplete: (_value) {
-                  // _pageProvider.getUsers(name: _value);
-                  FocusScope.of(context).unfocus();
-                }),
-            _hDoctorsSection(),
-            const SizedBox(
-              height: 32,
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 24),
-              child: Column(
+        child: !isDataLoaded
+            ? const Center(child: CircularProgressIndicator())
+            : Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // _categorySection(),
+                  CustomTextField2(
+                      controller: _searchFieldTextEditingController,
+                      hintText: "Search",
+                      obscureText: false,
+                      onEditingComplete: (_value) {
+                        // _pageProvider.getUsers(name: _value);
+                        FocusScope.of(context).unfocus();
+                      }),
+                  _hDoctorsSection(),
                   const SizedBox(
                     height: 32,
                   ),
-                  _trDoctorsSection(),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 24),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        // _categorySection(),
+                        const SizedBox(
+                          height: 32,
+                        ),
+                        _trDoctorsSection(),
+                      ],
+                    ),
+                  ),
                 ],
               ),
-            ),
-          ],
-        ),
       ),
     );
   }
@@ -209,25 +227,28 @@ class _CounselorListPageState extends State<CounselorListPage> {
   /// DUMMY DATA
   /// **********************************************
   /// Get Highlighted Doctors List
-  List<Doctor> _getHDoctors() {
+  Future<List<Doctor>> _getHDoctors() async {
+    UserRepository userRepository = UserRepository();
+    var doctors = await userRepository.getCounselorUsers();
+
     List<Doctor> hDoctors = <Doctor>[];
 
-    hDoctors.add(Doctor(
-      firstName: 'Albert',
-      lastName: 'Alexander',
-      image: const Image(image: AssetImage("images/mathew.png")),
-      type: 'Psychology',
-      rating: 4.5,
-    ));
-    hDoctors.add(Doctor(
-      firstName: 'Elisa',
-      lastName: 'Rose',
-      image: const Image(image: AssetImage('iamges/albert.png')),
-      type: 'Psychology',
-      rating: 4.5,
-    ));
+    // hDoctors.add(Doctor(
+    //   firstName: 'Albert',
+    //   lastName: 'Alexander',
+    //   image: const Image(image: AssetImage("images/mathew.png")),
+    //   type: 'Psychology',
+    //   rating: 4.5,
+    // ));
+    // hDoctors.add(Doctor(
+    //   firstName: 'Elisa',
+    //   lastName: 'Rose',
+    //   image: const Image(image: AssetImage('iamges/albert.png')),
+    //   type: 'Psychology',
+    //   rating: 4.5,
+    // ));
 
-    return hDoctors;
+    return doctors;
     // }
 
     // /// Get Categories

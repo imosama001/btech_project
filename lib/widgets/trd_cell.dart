@@ -88,7 +88,7 @@ class TrdCell extends StatelessWidget {
           height: 10,
         ),
         Text(
-          doctor.firstName + ' ' + doctor.lastName,
+          doctor.name,
           style: const TextStyle(
             color: Colors.black,
             fontSize: 18,

@@ -38,10 +38,7 @@ class _CounselorDetailsState extends State<CounselorDetails> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Dr.' +
-                        widget.doctor.firstName +
-                        ' ' +
-                        widget.doctor.lastName,
+                    'Dr.' + widget.doctor.name,
                     style: const TextStyle(
                       color: Colors.black,
                       fontSize: 22,
@@ -211,7 +208,7 @@ class _CounselorDetailsState extends State<CounselorDetails> {
               child: AspectRatio(
                 aspectRatio: 196 / 285,
                 child: Hero(
-                  tag: widget.doctor.firstName + widget.doctor.lastName,
+                  tag: widget.doctor.name,
                   child: const Image(
                     filterQuality: FilterQuality.high,
                     fit: BoxFit.fitHeight,

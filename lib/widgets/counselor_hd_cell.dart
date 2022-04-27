@@ -1,9 +1,12 @@
+import 'package:b_tech_project/repository/user_repository.dart';
 import 'package:b_tech_project/utilites/doctor_parameter.dart';
 import 'package:b_tech_project/widgets/icons.dart';
 import 'package:b_tech_project/colors.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
-class HDCell extends StatelessWidget {
+class HDCell extends StatefulWidget {
   final Doctor doctor;
   final Function onTap;
 
@@ -14,10 +17,17 @@ class HDCell extends StatelessWidget {
   });
 
   @override
+  State<HDCell> createState() => _HDCellState();
+}
+
+class _HDCellState extends State<HDCell> {
+  UserRepository? _conselorList;
+  @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
+    // _conselorList = Provider.of<UserRepository>(context);
     return GestureDetector(
-      onTap: () => onTap(),
+      onTap: () => widget.onTap(),
       child: Container(
         width: size.width * .7,
         height: size.height * .3,
@@ -45,35 +55,35 @@ class HDCell extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
-                    'Dr.',
-                    style: TextStyle(
+                  Text(
+                    'Dr. ${widget.doctor.name}',
+                    style: const TextStyle(
                       color: Colors.white,
                       fontSize: 14,
                       fontWeight: FontWeight.w700,
                     ),
                   ),
-                  Text(
-                    doctor.firstName,
-                    style: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 22,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                  Text(
-                    doctor.lastName,
-                    style: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 22,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
+                  // Text(
+                  //   _conselorList!  ['name'],
+                  //   style: const TextStyle(
+                  //     color: Colors.white,
+                  //     fontSize: 22,
+                  //     fontWeight: FontWeight.w700,
+                  //   ),
+                  // ),
+                  // Text(
+                  //   widget.doctor.lastName,
+                  //   style: const TextStyle(
+                  //     color: Colors.white,
+                  //     fontSize: 22,
+                  //     fontWeight: FontWeight.w700,
+                  //   ),
+                  // ),
                   const SizedBox(
                     height: 16,
                   ),
                   Text(
-                    doctor.type + ' Specialist',
+                    widget.doctor.type + ' Specialist',
                     style: const TextStyle(
                       color: Colors.white,
                       fontSize: 14,
@@ -108,7 +118,7 @@ class HDCell extends StatelessWidget {
                 width: 120,
                 height: 173,
                 child: Hero(
-                  tag: doctor.firstName + doctor.lastName,
+                  tag: widget.doctor.name,
                   child: const Image(
                     filterQuality: FilterQuality.high,
                     image: AssetImage('images/mathew.png'),
