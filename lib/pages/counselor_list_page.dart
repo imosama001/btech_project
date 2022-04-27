@@ -1,3 +1,4 @@
+import 'package:b_tech_project/repository/gwt_consuler.dart';
 import 'package:b_tech_project/widgets/doctors_category_cell.dart';
 import 'package:b_tech_project/widgets/trd_cell.dart';
 import 'package:b_tech_project/widgets/counselor_hd_cell.dart';
@@ -6,7 +7,10 @@ import 'package:b_tech_project/utilites/doctor_parameter.dart';
 import 'package:b_tech_project/pages/counselor_details_page.dart';
 import 'package:b_tech_project/widgets/icons.dart';
 import 'package:b_tech_project/colors.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+
+import '../widgets/customtextfield2.dart';
 
 class CounselorListPage extends StatefulWidget {
   @override
@@ -14,6 +18,9 @@ class CounselorListPage extends StatefulWidget {
 }
 
 class _CounselorListPageState extends State<CounselorListPage> {
+  final TextEditingController _searchFieldTextEditingController =
+      TextEditingController();
+
   List<Doctor> _hDoctors = <Doctor>[];
   final List<Category> _categories = <Category>[];
   List<Doctor> _trDoctors = <Doctor>[];
@@ -44,12 +51,25 @@ class _CounselorListPageState extends State<CounselorListPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: _buildAppBar(),
+      appBar: AppBar(
+        title: Text("Doc"),
+        backgroundColor: Colors.transparent,
+      ),
+      // _buildAppBar(),
+
       body: SingleChildScrollView(
         physics: const BouncingScrollPhysics(),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            CustomTextField2(
+                controller: _searchFieldTextEditingController,
+                hintText: "Search",
+                obscureText: false,
+                onEditingComplete: (_value) {
+                  // _pageProvider.getUsers(name: _value);
+                  FocusScope.of(context).unfocus();
+                }),
             _hDoctorsSection(),
             const SizedBox(
               height: 32,
@@ -76,30 +96,30 @@ class _CounselorListPageState extends State<CounselorListPage> {
   /// **********************************************
   /// WIDGETS
   /// **********************************************
-  AppBar _buildAppBar() {
-    return AppBar(
-      backgroundColor: Colors.white,
-      elevation: 0,
-      brightness: Brightness.light,
-      iconTheme: IconThemeData(color: HexColor('#150047')),
-      leading: IconButton(
-        icon: const Icon(
-          Icons.menu,
-          size: 14,
-        ),
-        onPressed: () {},
-      ),
-      actions: [
-        IconButton(
-          icon: const Icon(
-            Icons.search,
-            size: 20,
-          ),
-          onPressed: () {},
-        ),
-      ],
-    );
-  }
+  // AppBar _buildAppBar() {
+  //   return AppBar(
+  //     backgroundColor: Colors.white,
+  //     elevation: 0,
+  //     brightness: Brightness.light,
+  //     iconTheme: IconThemeData(color: HexColor('#150047')),
+  //     leading: IconButton(
+  //       icon: const Icon(
+  //         Icons.menu,
+  //         size: 14,
+  //       ),
+  //       onPressed: () {},
+  //     ),
+  //     actions: [
+  //       IconButton(
+  //         icon: const Icon(
+  //           Icons.search,
+  //           size: 20,
+  //         ),
+  //         onPressed: () {},
+  //       ),
+  //     ],
+  //   );
+  // }
 
   /// Highlighted Doctors Section
   SizedBox _hDoctorsSection() {
