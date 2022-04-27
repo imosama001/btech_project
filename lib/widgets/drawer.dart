@@ -65,22 +65,22 @@ class _MyDrawerState extends State<MyDrawer> {
                 child: Column(
                   children: [
                     GestureDetector(
-                      // onTap: () {
-                      //   Navigator.push(
-                      //     context,
-                      //     MaterialPageRoute(
-                      //       builder: (context) => UserProfile(),
-                      //     ),
-                      //   );
-                      // },
                       onTap: () {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => AddCounsellorDetails(),
+                            builder: (context) => UserProfile(),
                           ),
                         );
                       },
+                      // onTap: () {
+                      //   Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //       builder: (context) => AddCounsellorDetails(),
+                      //     ),
+                      //   );
+                      // },
                       child: CircleAvatar(
                         radius: size.width * .12,
                         backgroundImage:
