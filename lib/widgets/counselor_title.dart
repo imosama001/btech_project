@@ -45,7 +45,7 @@ class CounselorDetailedTitle extends StatelessWidget {
               child: AspectRatio(
                 aspectRatio: 196 / 285,
                 child: Hero(
-                  tag: widget.doctor.firstName + widget.doctor.lastName,
+                  tag: widget.doctor.name,
                   child: const Image(
                     filterQuality: FilterQuality.high,
                     fit: BoxFit.fitHeight,

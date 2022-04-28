@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:b_tech_project/utilites/doctor_parameter.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
@@ -135,7 +136,6 @@ class UserRepository with ChangeNotifier {
       'uuid': FirebaseAuth.instance.currentUser!.uid,
       'joinDate': Timestamp.now(),
       'isRequestAccepted': 'pending', // pending, accepted, rejected
-      'isAdmin': false,
       'isCounselor': false,
     }).then((value) {
       _appState = AppState.authenticated;
@@ -235,5 +235,45 @@ class UserRepository with ChangeNotifier {
     }).catchError((error) {
       throw error;
     });
+  }
+
+  Future<List<Doctor>> getCounselorUsers() async {
+    var getConselor = await _firestore
+        .collection("users")
+        .where("isCounselor", isEqualTo: true)
+        .get();
+    var docs = getConselor.docs;
+
+    List<Doctor> doctors = [];
+
+    for (var doc in docs) {
+      var data = doc.data();
+      Doctor value = Doctor(
+          name: data['name'],
+          image: Image(image: NetworkImage((data['photoUrl']))),
+          type: 'none',
+          rating: 5);
+      doctors.add(value);
+    }
+    debugPrint(doctors.toString());
+    return doctors;
+  }
+
+  Future<QuerySnapshot> getUsers({String? name}) {
+    // final _auth = FirebaseAuth.instance.currentUser;
+    final FirebaseFirestore usersget = FirebaseFirestore.instance;
+
+    /// search user
+    Query _query = usersget
+        .collection('users')
+        .where("isAdmin", isEqualTo: true)
+        .where("name", isNotEqualTo: _auth!.currentUser);
+
+    if (name != null) {
+      _query = _query
+          .where("name", isGreaterThanOrEqualTo: name)
+          .where("name", isLessThanOrEqualTo: name + "z");
+    }
+    return _query.get();
   }
 }
