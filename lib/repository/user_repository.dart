@@ -258,4 +258,22 @@ class UserRepository with ChangeNotifier {
     debugPrint(doctors.toString());
     return doctors;
   }
+
+  Future<QuerySnapshot> getUsers({String? name}) {
+    // final _auth = FirebaseAuth.instance.currentUser;
+    final FirebaseFirestore usersget = FirebaseFirestore.instance;
+
+    /// search user
+    Query _query = usersget
+        .collection('users')
+        .where("isAdmin", isEqualTo: true)
+        .where("name", isNotEqualTo: _auth!.currentUser);
+
+    if (name != null) {
+      _query = _query
+          .where("name", isGreaterThanOrEqualTo: name)
+          .where("name", isLessThanOrEqualTo: name + "z");
+    }
+    return _query.get();
+  }
 }

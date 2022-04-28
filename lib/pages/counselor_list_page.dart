@@ -1,4 +1,3 @@
-import 'package:b_tech_project/repository/gwt_consuler.dart';
 import 'package:b_tech_project/repository/user_repository.dart';
 import 'package:b_tech_project/widgets/doctors_category_cell.dart';
 import 'package:b_tech_project/widgets/trd_cell.dart';
@@ -10,6 +9,7 @@ import 'package:b_tech_project/widgets/icons.dart';
 import 'package:b_tech_project/colors.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import '../widgets/customtextfield2.dart';
 
@@ -21,6 +21,8 @@ class CounselorListPage extends StatefulWidget {
 class _CounselorListPageState extends State<CounselorListPage> {
   final TextEditingController _searchFieldTextEditingController =
       TextEditingController();
+
+  UserRepository? conselor;
 
   List<Doctor> _hDoctors = <Doctor>[];
   final List<Category> _categories = <Category>[];
@@ -55,6 +57,7 @@ class _CounselorListPageState extends State<CounselorListPage> {
 
   @override
   Widget build(BuildContext context) {
+    conselor = Provider.of<UserRepository>(context);
     if (!isDataLoaded) {
       _getHDoctors().then((doctorsList) {
         _hDoctors = doctorsList;
@@ -85,7 +88,7 @@ class _CounselorListPageState extends State<CounselorListPage> {
                       hintText: "Search",
                       obscureText: false,
                       onEditingComplete: (_value) {
-                        // _pageProvider.getUsers(name: _value);
+                        conselor?.getUsers(name: _value);
                         FocusScope.of(context).unfocus();
                       }),
                   _hDoctorsSection(),
