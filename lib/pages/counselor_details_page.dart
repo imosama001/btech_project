@@ -1,3 +1,4 @@
+import 'package:b_tech_project/pages/booking_system/booking_page2.dart';
 import 'package:b_tech_project/utilites/doctor_parameter.dart';
 import 'package:b_tech_project/widgets/counselor_details.dart';
 import 'package:b_tech_project/colors.dart';
@@ -149,7 +150,7 @@ class _CounselorDetailsState extends State<CounselorDetails> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => DoctorBookingPage(),
+                          builder: (context) => BookingPage2(),
                         ),
                       );
                     },
