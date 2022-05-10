@@ -60,6 +60,13 @@ class _QuestionPageState extends State<QuestionPage> {
       }
     }
 
+    _action1() {
+      print('TODO Previous Question');
+      setState(() {
+        previousQuestion();
+      });
+    }
+
     String currentQuestion = questions[selectedQuestionIndex].questionText;
     String currentOption1 = questions[selectedQuestionIndex].answers[0].text;
     String currentOption2 = questions[selectedQuestionIndex].answers[1].text;
