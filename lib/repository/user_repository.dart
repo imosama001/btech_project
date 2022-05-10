@@ -267,7 +267,7 @@ class UserRepository with ChangeNotifier {
     Query _query = usersget
         .collection('users')
         .where("isAdmin", isEqualTo: true)
-        .where("name", isNotEqualTo: _auth!.currentUser);
+        .where("name", isNotEqualTo: _auth.currentUser);
 
     if (name != null) {
       _query = _query

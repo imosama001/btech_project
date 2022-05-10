@@ -119,9 +119,10 @@ class _HDCellState extends State<HDCell> {
                 height: 173,
                 child: Hero(
                   tag: widget.doctor.name,
-                  child: const Image(
+                  child: Image(
                     filterQuality: FilterQuality.high,
-                    image: AssetImage('images/mathew.png'),
+                    //image: AssetImage('images/mathew.png'),
+                    image: widget.doctor.image.image,
                   ),
                 ),
               ),

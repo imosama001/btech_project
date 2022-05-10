@@ -210,10 +210,10 @@ class _CounselorDetailsState extends State<CounselorDetails> {
                 aspectRatio: 196 / 285,
                 child: Hero(
                   tag: widget.doctor.name,
-                  child: const Image(
+                  child: Image(
                     filterQuality: FilterQuality.high,
                     fit: BoxFit.fitHeight,
-                    image: AssetImage('images/mathew.png'),
+                    image: widget.doctor.image.image,
                   ),
                 ),
               ),
