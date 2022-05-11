@@ -1,12 +1,15 @@
+import 'package:b_tech_project/pages/booking_system/booking_page2.dart';
 import 'package:b_tech_project/pages/counselor_details_page.dart';
 import 'package:b_tech_project/pages/counselor_list_page.dart';
 import 'package:b_tech_project/pages/setting_page.dart';
+import 'package:b_tech_project/repository/user_repository.dart';
 import 'package:b_tech_project/services/agora/src/pages/chat_page.dart';
 import 'package:b_tech_project/utilites/doctor_parameter.dart';
 import 'package:b_tech_project/widgets/drawer.dart';
 import 'package:b_tech_project/widgets/home_page_card.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:provider/provider.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -36,6 +39,7 @@ class _HomePageState extends State<HomePage>
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
+    final UserRepository _userRepository = Provider.of<UserRepository>(context);
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
@@ -79,27 +83,51 @@ class _HomePageState extends State<HomePage>
                     SizedBox(
                       height: size.height * .025,
                     ),
-                    HomePageCard(
-                        cardDescriptionText: "Need a Counselor To Help You Out",
-                        image: Image.asset('images/counselor.jpg'),
-                        cardString: "CONSULT A COUNSELOR",
-                        onButtonPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => CounselorListPage(
-                                  // doctor: Doctor(
-                                  //     firstName: "Peter",
-                                  //     lastName: "Pane",
-                                  //     image: const Image(
-                                  //       image: AssetImage('mathew.png'),
-                                  //     ),
-                                  //     type: "type",
-                                  //     rating: 4.5),
-                                  ),
-                            ),
-                          );
-                        }),
+                    !_userRepository.isCounsellor
+                        ? HomePageCard(
+                            cardDescriptionText:
+                                "Need a Counselor To Help You Out",
+                            image: Image.asset('images/counselor.jpg'),
+                            cardString: "CONSULT A COUNSELOR",
+                            onButtonPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => CounselorListPage(
+                                      // doctor: Doctor(
+                                      //     firstName: "Peter",
+                                      //     lastName: "Pane",
+                                      //     image: const Image(
+                                      //       image: AssetImage('mathew.png'),
+                                      //     ),
+                                      //     type: "type",
+                                      //     rating: 4.5),
+                                      ),
+                                ),
+                              );
+                            })
+                        : HomePageCard(
+                            cardDescriptionText:
+                                "Hi Counselor Tell Us When Are You Available",
+                            image: Image.asset('images/counselor.jpg'),
+                            cardString: "Provide Your Availability",
+                            onButtonPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const BookingPage2(
+                                      // doctor: Doctor(
+                                      //     firstName: "Peter",
+                                      //     lastName: "Pane",
+                                      //     image: const Image(
+                                      //       image: AssetImage('mathew.png'),
+                                      //     ),
+                                      //     type: "type",
+                                      //     rating: 4.5),
+                                      ),
+                                ),
+                              );
+                            }),
                     SizedBox(height: size.height * .025),
                   ],
                 ),

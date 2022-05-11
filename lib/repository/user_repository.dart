@@ -24,6 +24,8 @@ class UserRepository with ChangeNotifier {
   AppState _appState = AppState.initial;
 
   AppState get appState => _appState;
+  bool isUserCounsellor = false;
+  bool get isCounsellor => isUserCounsellor;
   get user => _user;
 
   UserRepository() : _auth = FirebaseAuth.instance {
@@ -41,6 +43,17 @@ class UserRepository with ChangeNotifier {
         _user = firebaseUser;
 
         _appState = AppState.authenticated;
+
+        _firestore
+            .collection('users')
+            .doc(firebaseUser.uid)
+            .get()
+            .then((value) {
+          isUserCounsellor = value.data()?['isCounselor'] ?? false;
+          notifyListeners();
+          print('*' * 30);
+          print(isUserCounsellor);
+        });
         notifyListeners();
 
         // print('*' * 200);
