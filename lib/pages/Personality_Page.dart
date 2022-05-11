@@ -1,11 +1,10 @@
-// ignore_for_file: prefer_const_constructors
-
-import 'dart:ui';
-
 import 'package:b_tech_project/functions/mbti_calculations.dart';
 import 'package:b_tech_project/pages/user_profile.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'question_page.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 
 class PersonalityPage extends StatefulWidget {
   PersonalityPage(this.personalityType);
@@ -16,18 +15,44 @@ class PersonalityPage extends StatefulWidget {
   State<PersonalityPage> createState() => _PersonalityPageState();
 }
 
+FirebaseFirestore _firebaseFirestore = FirebaseFirestore.instance;
+
 class _PersonalityPageState extends State<PersonalityPage>
     with TickerProviderStateMixin {
   TabController? _controller;
+  String overview = "";
+  String nickname = "";
+  String strength = "";
+  String weakness = "";
+  String career = "";
+  String imageUrl = "";
+  void getData() async {
+    await _firebaseFirestore.collection('personalityTypes').get().then((value) {
+      if (mounted) {
+        setState(() {
+          var data = value.data();
+          nickname = data!['nickname'];
+          photoUrl = data['personalityImage'];
+          overview = data['overview'];
+          strength = data['strength'];
+          weakness = data['weakness'];
+          career = data['strength'];
+
+          print(value.data());
+          print("%%%%%%%%%%%%");
+        });
+      }
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     TabController _tabController = TabController(length: 4, vsync: this);
     final TextStyle _tabTextStyle = TextStyle(
-      fontWeight: FontWeight.w400,
+      fontWeight: FontWeight.w700,
       color: Colors.black54,
-      fontSize: 18,
+      fontSize: 20,
     );
 
     return Scaffold(
@@ -35,7 +60,7 @@ class _PersonalityPageState extends State<PersonalityPage>
         title: const Text('Personality overview'),
       ),
       body: SingleChildScrollView(
-        child: Container(
+        child: SizedBox(
           // color: Colors.amber,
           width: size.width * 2,
           height: size.height * 2,
@@ -53,24 +78,23 @@ class _PersonalityPageState extends State<PersonalityPage>
                         // ignore: prefer_const_literals_to_create_immutables
                         children: [
                           Text(
-                            '$personalityType Personality',
-                            style: TextStyle(
+                            '${widget.personalityType} Personality',
+                            style: const TextStyle(
                                 fontSize: 20, fontWeight: FontWeight.bold),
                           ),
-                          Text(
+                          const Text(
                             'The Teacher',
                             style: TextStyle(fontSize: 20),
-                          ),
-                          Text(
-                            personalityType + "P",
-                            style: TextStyle(fontSize: 20, color: Colors.black),
                           ),
                         ],
                       ),
                       Container(
                         height: 100,
                         width: 200,
-                        color: Colors.red,
+                        decoration: const BoxDecoration(
+                            image: DecorationImage(
+                                image: NetworkImage(
+                                    'https://static.neris-assets.com/images/personality-types/avatars/intp-logician.png'))),
                       ),
                     ],
                   ),
@@ -87,57 +111,100 @@ class _PersonalityPageState extends State<PersonalityPage>
                         SizedBox(
                           height: 50,
                           child: TabBar(
+                            isScrollable: true,
                             controller: _tabController,
                             tabs: [
                               Tab(
                                 child: Text(
-                                  'overview',
-                                  style: _tabTextStyle,
+                                  'Overview',
+                                  style: TextStyle(
+                                      color: Colors.amber.withOpacity(.8),
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w700),
                                 ),
                               ),
                               Tab(
                                 child: Text(
                                   'Strength',
-                                  style: _tabTextStyle,
+                                  style: TextStyle(
+                                      color: Colors.green.withOpacity(.7),
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w700),
                                 ),
                               ),
                               Tab(
-                                child: Text(
-                                  'Weakness',
-                                  style: _tabTextStyle,
-                                ),
+                                child: Text('Weakness',
+                                    style: TextStyle(
+                                        color: Colors.orange.withOpacity(.7),
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.w700)),
                               ),
                               Tab(
-                                child: Text(
-                                  'Career',
-                                  style: _tabTextStyle,
-                                ),
+                                child: Text('Career',
+                                    style: TextStyle(
+                                        color: Colors.blue.withOpacity(.7),
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.w700)),
                               ),
                             ],
                           ),
                         ),
-                        TabBarView(controller: _tabController, children: [
-                          Container(
-                            height: 60,
-                            width: 60,
-                            color: Colors.red,
-                          ),
-                          Container(
-                            height: 60,
-                            width: 60,
-                            color: Colors.red,
-                          ),
-                          Container(
-                            height: 60,
-                            width: 60,
-                            color: Colors.red,
-                          ),
-                          Container(
-                            height: 60,
-                            width: 60,
-                            color: Colors.red,
-                          )
-                        ]),
+                        SizedBox(
+                          height: size.height * 1,
+                          child:
+                              TabBarView(controller: _tabController, children: [
+                            Container(
+                              //height: double.infinity,
+
+                              // width: 60,
+                              //color: Colors.green,
+                              child: Padding(
+                                padding: EdgeInsets.all(8.0),
+                                child: SingleChildScrollView(
+                                  child: Text(
+                                    "An Architect (INTJ) is a person with the Introverted, Intuitive, Thinking, and Judging personality traits.\n\nThese thoughtful tacticians love perfecting the details of life, applying creativity and rationality to everything they do. Their inner world is often a private, complex one.Architects, independent to the core, want to shake off other people’s expectations and pursue their own ideas.Architects don’t just learn new things for show – they genuinely enjoy expanding the limits of their knowledge.At times, Architects may wonder whether dealing with other people is even worth the frustration."
+                                    "An Architect (INTJ) is a person with the Introverted, Intuitive, Thinking, and Judging personality traits.\n\nThese thoughtful tacticians love perfecting the details of life, applying creativity and rationality to everything they do. Their inner world is often a private, complex one.Architects, independent to the core, want to shake off other people’s expectations and pursue their own ideas.Architects don’t just learn new things for show – they genuinely enjoy expanding the limits of their knowledge.At times, Architects may wonder whether dealing with other people is even worth the frustration.",
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        color: Colors.black.withOpacity(1)),
+                                    textAlign: TextAlign.justify,
+                                  ),
+                                ),
+                              ),
+
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(20),
+                                  color: Colors.amber.withOpacity(.1)),
+                            ),
+                            Container(
+                              height: 60,
+                              width: 60,
+                              child: Text(
+                                  "Rational – Architects pride themselves on the power of their minds. Informed – Few personality types are as devoted as Architects to developing rational, correct, and evidence-based opinions.Creative and self-motivated, Architects strive to do things their own way. They are determind and curious."),
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(20),
+                                  color: Colors.green.withOpacity(.1)),
+                            ),
+                            Container(
+                              height: 60,
+                              width: 60,
+                              child: Text(
+                                  "Arrogant – Architects might be knowledgeable, but they’re not infallible.Dismissive of Emotions – For Architects, rationality is king. But emotional context often matters more than people with this personality type care to admit. Overly Critical – These personalities tend to have a great deal of self-control, particularly when it comes to thoughts and feelings. Socially Clueless – Architects’ relentless rationality can lead to frustration in their social lives. "),
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(20),
+                                  color: Colors.orange.withOpacity(.1)),
+                            ),
+                            Container(
+                              height: 60,
+                              width: 60,
+                              child: Text(
+                                  "The Early-Career Blues:  In the workplace, Architect personalities are often known for competence and effectiveness.People with this personality type value resourcefulness, grit, insight, and commitment – in themselves and in others."),
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(20),
+                                  color: Colors.blue.withOpacity(.1)),
+                            )
+                          ]),
+                        ),
                         // TabBarView(controller: _tabController, children: [
                         //   SingleChildScrollView(
                         //     child: Container(
