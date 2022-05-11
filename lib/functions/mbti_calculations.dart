@@ -98,6 +98,7 @@ void finalSubmit(BuildContext context) {
   print("J= " + J_percent.toString());
   print("P= " + P_percent.toString());
 
+
   Navigator.of(context).push(MaterialPageRoute(
     builder: (context) => PersonalityPage(PersonalityType),
   ));
