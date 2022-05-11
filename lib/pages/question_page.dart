@@ -73,23 +73,28 @@ class _QuestionPageState extends State<QuestionPage> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.arrow_back_rounded),
         onPressed: () {
           previousQuestion();
         },
       ),
       body: Container(
         height: size.height,
-        color: Color(0xff00CCDD),
+        color: Colors.white10,
         child: Column(children: [
           const SizedBox(
             height: 50,
           ),
           Row(
-            children: const [
-              SizedBox(
+            children: [
+              const SizedBox(
                 width: 10,
               ),
-              Icon(Icons.arrow_back),
+              GestureDetector(
+                  child: const Icon(Icons.arrow_back),
+                  onTap: () {
+                    Navigator.pop(context);
+                  }),
             ],
           ),
           const SizedBox(
@@ -181,6 +186,12 @@ class _QuestionPageState extends State<QuestionPage> {
                       //     : Colors.grey,
                       color: Colors.grey,
                     ),
+                    boxShadow: const [
+                      BoxShadow(
+                          color: Colors.grey,
+                          blurRadius: 5,
+                          offset: Offset(3, 1))
+                    ],
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(size.width * .05),
                   ),
@@ -217,6 +228,12 @@ class _QuestionPageState extends State<QuestionPage> {
                       //     : Colors.grey,
                       color: Colors.grey,
                     ),
+                    boxShadow: const [
+                      BoxShadow(
+                          color: Colors.grey,
+                          blurRadius: 5,
+                          offset: Offset(3, 2))
+                    ],
                     borderRadius: BorderRadius.circular(size.width * .05),
                   ),
                   child: Center(

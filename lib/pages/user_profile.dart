@@ -1,3 +1,4 @@
+import 'package:b_tech_project/pages/Personality_Page.dart';
 import 'package:b_tech_project/pages/question_page.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -29,6 +30,7 @@ class _UserProfileState extends State<UserProfile> {
           var data = value.data();
           name = data!['name'];
           photoUrl = data['photoUrl'];
+          personalityType = data['personalityType'];
           print(value.data());
           print("%%%%%%%%%%%%");
         });
@@ -69,8 +71,11 @@ class _UserProfileState extends State<UserProfile> {
                     image: NetworkImage(photoUrl),
                     fit: BoxFit.fill,
                   ),
-                  decoration:
-                      BoxDecoration(borderRadius: BorderRadius.circular(20)),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: const [
+                        BoxShadow(blurRadius: 2, offset: Offset(1, 2)),
+                      ]),
                   height: 170,
                   width: 170,
                 ),
@@ -83,7 +88,10 @@ class _UserProfileState extends State<UserProfile> {
               crossAxisAlignment: CrossAxisAlignment.start,
               // ignore: prefer_const_literals_to_create_immutables
               children: [
-                Text(name),
+                Text(
+                  name,
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                ),
                 (personalityType != "")
                     ? Text(
                         personalityType,
@@ -91,9 +99,8 @@ class _UserProfileState extends State<UserProfile> {
                             fontWeight: FontWeight.bold, fontSize: 19),
                       )
                     : const Text(
-                        "Calculate Personality",
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 19),
+                        "Personality Not calculated...",
+                        style: TextStyle(fontSize: 19),
                       ),
                 const Text(
                   "Discover Your True Potential",
@@ -106,45 +113,78 @@ class _UserProfileState extends State<UserProfile> {
             height: 20,
           ),
           GestureDetector(
-            child: Container(
-              width: _size.width - 40,
-              height: 200,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: Colors.teal[300],
-                  boxShadow: const [
-                    BoxShadow(
-                        color: Colors.black,
-                        blurRadius: 2.0,
-                        offset: Offset(0, 2)),
-                  ]),
-            ),
             onTap: () {
-              print("Video card tapped");
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => QuestionPage(),
+                ),
+              );
             },
-          ),
+            child: Container(
+              height: 40,
+              decoration: BoxDecoration(
+                  color: Colors.black,
+                  borderRadius: BorderRadius.circular(20),
+                  boxShadow: const [
+                    BoxShadow(blurRadius: 2, offset: Offset(1, 2))
+                  ]),
+              child: const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                child: Text(
+                  "Take the Personality Test",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 17),
+                ),
+              ),
+            ),
+          )
+          // GestureDetector(
+          //   child: Container(
+          //     width: _size.width - 40,
+          //     height: 200,
+          //     decoration: BoxDecoration(
+          //         borderRadius: BorderRadius.circular(20),
+          //         color: Colors.teal[300],
+          //         boxShadow: const [
+          //           BoxShadow(
+          //               color: Colors.black,
+          //               blurRadius: 2.0,
+          //               offset: Offset(0, 2)),
+          //         ]),
+          //   ),
+          //   onTap: () {
+          //     print("Video card tapped");
+          //   },
+          // ),
+          ,
           const SizedBox(
             height: 20,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              _squareCard(
-                  "f", "SHORT TEST", "10 min", () {}, _size.width / 2.5),
-              GestureDetector(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => QuestionPage(),
-                    ),
-                  );
-                },
-                child: _squareCard(
-                    "f", "LONG TEST", "30 min", () {}, _size.width / 2.5),
-              )
-            ],
-          ),
+          // Row(
+          //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          //   children: [
+          //     _squareCard("f", "SHORT TEST", "10 min", () {
+          //       Navigator.of(context).push(MaterialPageRoute(
+          //         builder: (context) => PersonalityPage('INTJ'),
+          //       ));
+          //     }, _size.width / 2.5),
+          //     GestureDetector(
+          //       onTap: () {
+          //         Navigator.push(
+          //           context,
+          //           MaterialPageRoute(
+          //             builder: (context) => QuestionPage(),
+          //           ),
+          //         );
+          //       },
+          //       child: _squareCard(
+          //           "f", "LONG TEST", "30 min", () {}, _size.width / 2.5),
+          //     )
+          //   ],
+          // ),
           const SizedBox(
             height: 40,
           ),
@@ -184,6 +224,9 @@ class _UserProfileState extends State<UserProfile> {
               itemBuilder: (ctx, i) =>
                   _personalityWidget("image", "ENFJ", _size.width / 4, () {
                 print("$i is tapped");
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => PersonalityPage("INTP"),
+                ));
               }),
             ),
           ),

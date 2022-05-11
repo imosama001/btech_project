@@ -63,7 +63,7 @@ class _BodyState extends State<Body> {
     }
   }
 
-  List<String> timeSlots = ['10 am', '11 am'];
+  List<String> timeSlots = ['10 am', '11 am', '12 pm', '2 pm', '3 pm', '4 pm'];
   List<String> seletedTimeSlots = [];
 
   final SlotRepository _slotRepository = SlotRepository();

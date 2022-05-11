@@ -15,10 +15,20 @@ class PersonalityPage extends StatefulWidget {
   State<PersonalityPage> createState() => _PersonalityPageState();
 }
 
-FirebaseFirestore _firebaseFirestore = FirebaseFirestore.instance;
+CollectionReference personalityType =
+    FirebaseFirestore.instance.collection('personalityType');
 
 class _PersonalityPageState extends State<PersonalityPage>
     with TickerProviderStateMixin {
+  @override
+  void initState() {
+    if (imageUrl == "") {
+      getData();
+    }
+    super.initState();
+  }
+
+  FirebaseFirestore _firebaseFirestore = FirebaseFirestore.instance;
   TabController? _controller;
   String overview = "";
   String nickname = "";
@@ -26,17 +36,22 @@ class _PersonalityPageState extends State<PersonalityPage>
   String weakness = "";
   String career = "";
   String imageUrl = "";
+
   void getData() async {
-    await _firebaseFirestore.collection('personalityTypes').get().then((value) {
+    await _firebaseFirestore
+        .collection('personalityTypes')
+        .doc(widget.personalityType)
+        .get()
+        .then((value) {
       if (mounted) {
         setState(() {
           var data = value.data();
-          nickname = data!['nickname'];
-          photoUrl = data['personalityImage'];
+          nickname = data!['nickname'].toString().replaceFirst('\n', "\n");
+          imageUrl = data['personalityImage'];
           overview = data['overview'];
           strength = data['strength'];
           weakness = data['weakness'];
-          career = data['strength'];
+          career = data['career'];
 
           print(value.data());
           print("%%%%%%%%%%%%");
@@ -49,7 +64,7 @@ class _PersonalityPageState extends State<PersonalityPage>
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     TabController _tabController = TabController(length: 4, vsync: this);
-    final TextStyle _tabTextStyle = TextStyle(
+    const TextStyle _tabTextStyle = TextStyle(
       fontWeight: FontWeight.w700,
       color: Colors.black54,
       fontSize: 20,
@@ -57,6 +72,7 @@ class _PersonalityPageState extends State<PersonalityPage>
 
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.amberAccent,
         title: const Text('Personality overview'),
       ),
       body: SingleChildScrollView(
@@ -82,8 +98,8 @@ class _PersonalityPageState extends State<PersonalityPage>
                             style: const TextStyle(
                                 fontSize: 20, fontWeight: FontWeight.bold),
                           ),
-                          const Text(
-                            'The Teacher',
+                          Text(
+                            nickname,
                             style: TextStyle(fontSize: 20),
                           ),
                         ],
@@ -92,9 +108,9 @@ class _PersonalityPageState extends State<PersonalityPage>
                         height: 100,
                         width: 200,
                         decoration: const BoxDecoration(
-                            image: DecorationImage(
-                                image: NetworkImage(
-                                    'https://static.neris-assets.com/images/personality-types/avatars/intp-logician.png'))),
+                            image: DecorationImage(image: NetworkImage(
+                                //TODO: Add specific pictures from firebase
+                                'https://static.neris-assets.com/images/personality-types/avatars/intp-logician.png'))),
                       ),
                     ],
                   ),
@@ -162,8 +178,9 @@ class _PersonalityPageState extends State<PersonalityPage>
                                 padding: EdgeInsets.all(8.0),
                                 child: SingleChildScrollView(
                                   child: Text(
-                                    "An Architect (INTJ) is a person with the Introverted, Intuitive, Thinking, and Judging personality traits.\n\nThese thoughtful tacticians love perfecting the details of life, applying creativity and rationality to everything they do. Their inner world is often a private, complex one.Architects, independent to the core, want to shake off other people’s expectations and pursue their own ideas.Architects don’t just learn new things for show – they genuinely enjoy expanding the limits of their knowledge.At times, Architects may wonder whether dealing with other people is even worth the frustration."
-                                    "An Architect (INTJ) is a person with the Introverted, Intuitive, Thinking, and Judging personality traits.\n\nThese thoughtful tacticians love perfecting the details of life, applying creativity and rationality to everything they do. Their inner world is often a private, complex one.Architects, independent to the core, want to shake off other people’s expectations and pursue their own ideas.Architects don’t just learn new things for show – they genuinely enjoy expanding the limits of their knowledge.At times, Architects may wonder whether dealing with other people is even worth the frustration.",
+                                    // "An Architect (INTJ) is a person with the Introverted, Intuitive, Thinking, and Judging personality traits.\n\nThese thoughtful tacticians love perfecting the details of life, applying creativity and rationality to everything they do. Their inner world is often a private, complex one.Architects, independent to the core, want to shake off other people’s expectations and pursue their own ideas.Architects don’t just learn new things for show – they genuinely enjoy expanding the limits of their knowledge.At times, Architects may wonder whether dealing with other people is even worth the frustration."
+                                    // "An Architect (INTJ) is a person with the Introverted, Intuitive, Thinking, and Judging personality traits.\n\nThese thoughtful tacticians love perfecting the details of life, applying creativity and rationality to everything they do. Their inner world is often a private, complex one.Architects, independent to the core, want to shake off other people’s expectations and pursue their own ideas.Architects don’t just learn new things for show – they genuinely enjoy expanding the limits of their knowledge.At times, Architects may wonder whether dealing with other people is even worth the frustration."
+                                    overview.replaceAll(r'\n', '\n'),
                                     style: TextStyle(
                                         fontSize: 18,
                                         color: Colors.black.withOpacity(1)),
@@ -176,32 +193,59 @@ class _PersonalityPageState extends State<PersonalityPage>
                                   borderRadius: BorderRadius.circular(20),
                                   color: Colors.amber.withOpacity(.1)),
                             ),
-                            Container(
-                              height: 60,
-                              width: 60,
-                              child: Text(
-                                  "Rational – Architects pride themselves on the power of their minds. Informed – Few personality types are as devoted as Architects to developing rational, correct, and evidence-based opinions.Creative and self-motivated, Architects strive to do things their own way. They are determind and curious."),
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(20),
-                                  color: Colors.green.withOpacity(.1)),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Container(
+                                height: 60,
+                                width: 60,
+                                child: Text(
+                                  // "Rational – Architects pride themselves on the power of their minds. Informed – Few personality types are as devoted as Architects to developing rational, correct, and evidence-based opinions.Creative and self-motivated, Architects strive to do things their own way. They are determind and curious."
+                                  strength.replaceAll(r'\n', '\n'),
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      color: Colors.black.withOpacity(1)),
+                                  textAlign: TextAlign.justify,
+                                ),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(20),
+                                    color: Colors.green.withOpacity(.1)),
+                              ),
                             ),
-                            Container(
-                              height: 60,
-                              width: 60,
-                              child: Text(
-                                  "Arrogant – Architects might be knowledgeable, but they’re not infallible.Dismissive of Emotions – For Architects, rationality is king. But emotional context often matters more than people with this personality type care to admit. Overly Critical – These personalities tend to have a great deal of self-control, particularly when it comes to thoughts and feelings. Socially Clueless – Architects’ relentless rationality can lead to frustration in their social lives. "),
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(20),
-                                  color: Colors.orange.withOpacity(.1)),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Container(
+                                height: 60,
+                                width: 60,
+                                child: Text(
+                                  // "Arrogant – Architects might be knowledgeable, but they’re not infallible.Dismissive of Emotions – For Architects, rationality is king. But emotional context often matters more than people with this personality type care to admit. Overly Critical – These personalities tend to have a great deal of self-control, particularly when it comes to thoughts and feelings. Socially Clueless – Architects’ relentless rationality can lead to frustration in their social lives. "
+                                  weakness.replaceAll(r'\n', '\n'),
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      color: Colors.black.withOpacity(1)),
+                                  textAlign: TextAlign.justify,
+                                ),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(20),
+                                    color: Colors.orange.withOpacity(.1)),
+                              ),
                             ),
-                            Container(
-                              height: 60,
-                              width: 60,
-                              child: Text(
-                                  "The Early-Career Blues:  In the workplace, Architect personalities are often known for competence and effectiveness.People with this personality type value resourcefulness, grit, insight, and commitment – in themselves and in others."),
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(20),
-                                  color: Colors.blue.withOpacity(.1)),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Container(
+                                height: 60,
+                                width: 60,
+                                child: Text(
+                                  // "The Early-Career Blues:  In the workplace, Architect personalities are often known for competence and effectiveness.People with this personality type value resourcefulness, grit, insight, and commitment – in themselves and in others."
+                                  career.replaceAll(r'\n', '\n'),
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      color: Colors.black.withOpacity(1)),
+                                  textAlign: TextAlign.justify,
+                                ),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(20),
+                                    color: Colors.blue.withOpacity(.1)),
+                              ),
                             )
                           ]),
                         ),
