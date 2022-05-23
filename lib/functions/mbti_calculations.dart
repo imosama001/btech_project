@@ -1,4 +1,6 @@
 import 'package:b_tech_project/pages/user_profile.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 import '../models/question_model.dart';
@@ -98,6 +100,11 @@ void finalSubmit(BuildContext context) {
   print("J= " + J_percent.toString());
   print("P= " + P_percent.toString());
 
+  // update on firestore
+  String currentUserId = FirebaseAuth.instance.currentUser!.uid;
+  FirebaseFirestore.instance.collection("users").doc(currentUserId).update({
+    "personalityType": PersonalityType,
+  });
 
   Navigator.of(context).push(MaterialPageRoute(
     builder: (context) => PersonalityPage(PersonalityType),

@@ -264,8 +264,17 @@ class UserRepository with ChangeNotifier {
       Doctor value = Doctor(
           name: data['name'],
           image: Image(image: NetworkImage((data['photoUrl']))),
-          type: 'none',
-          rating: 5);
+          // type: 'none',
+          rating: 5,
+        counselorDescription: data['counselorDescription'],
+
+        location: data['address'],
+
+        speciality: data['speciality'],
+        uid: doc.id,
+        yearOfExperience: data['yearOfExperience'],
+
+      );
       doctors.add(value);
     }
     debugPrint(doctors.toString());

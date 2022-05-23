@@ -1,4 +1,7 @@
+import 'package:b_tech_project/a1.dart';
+import 'package:b_tech_project/pages/booking_system/bookingHistoryPage.dart';
 import 'package:b_tech_project/pages/booking_system/booking_page2.dart';
+import 'package:b_tech_project/pages/booking_system/upcomingBookingPage.dart';
 import 'package:b_tech_project/pages/counselor_details_page.dart';
 import 'package:b_tech_project/pages/counselor_list_page.dart';
 import 'package:b_tech_project/pages/setting_page.dart';
@@ -57,88 +60,89 @@ class _HomePageState extends State<HomePage>
           children: [
             SingleChildScrollView(
               //padding: EdgeInsets.only(left: size.width * .04),
-              child: SafeArea(
-                child: Column(
-                  children: [
-                    SizedBox(height: size.height * .025),
-                    // CircleAvatar(
-                    //   radius: size.width * .15,
-                    //   backgroundImage: AssetImage('images/profile.jpeg'),
-                    // ),
-                    // Text("P_TYPE"),
-                    // Text("Discover Your True Self"),
-                    HomePageCard(
-                        cardDescriptionText: "Need Help with a Rough Day?",
-                        image: Image.asset('images/rough.jpg'),
-                        cardString: "TAKE UP A RESCUE",
-                        onButtonPressed: () {}),
-                    SizedBox(
-                      height: size.height * .025,
-                    ),
-                    HomePageCard(
-                        cardDescriptionText: "Want To Enhance Poductivity",
-                        image: Image.asset('images/productive.jpg'),
-                        cardString: "START YOUR JOURNEY",
-                        onButtonPressed: () {}),
-                    SizedBox(
-                      height: size.height * .025,
-                    ),
-                    !_userRepository.isCounsellor
-                        ? HomePageCard(
-                            cardDescriptionText:
-                                "Need a Counselor To Help You Out",
-                            image: Image.asset('images/counselor.jpg'),
-                            cardString: "CONSULT A COUNSELOR",
-                            onButtonPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => CounselorListPage(
-                                      // doctor: Doctor(
-                                      //     firstName: "Peter",
-                                      //     lastName: "Pane",
-                                      //     image: const Image(
-                                      //       image: AssetImage('mathew.png'),
-                                      //     ),
-                                      //     type: "type",
-                                      //     rating: 4.5),
-                                      ),
-                                ),
-                              );
-                            })
-                        : HomePageCard(
-                            cardDescriptionText:
-                                "Hi Counselor Tell Us When Are You Available",
-                            image: Image.asset('images/counselor.jpg'),
-                            cardString: "Provide Your Availability",
-                            onButtonPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const BookingPage2(
-                                      // doctor: Doctor(
-                                      //     firstName: "Peter",
-                                      //     lastName: "Pane",
-                                      //     image: const Image(
-                                      //       image: AssetImage('mathew.png'),
-                                      //     ),
-                                      //     type: "type",
-                                      //     rating: 4.5),
-                                      ),
-                                ),
-                              );
-                            }),
-                    SizedBox(height: size.height * .025),
-                  ],
-                ),
+              physics: BouncingScrollPhysics(),
+              child: Column(
+                children: [
+                  SizedBox(height: size.height * .02),
+                  // CircleAvatar(
+                  //   radius: size.width * .15,
+                  //   backgroundImage: AssetImage('images/profile.jpeg'),
+                  // ),
+                  // Text("P_TYPE"),
+                  // Text("Discover Your True Self"),
+                  HomePageCard(
+                      cardDescriptionText: "Need Help with a Rough Day?",
+                      image: Image.asset('images/rough.jpg'),
+                      cardString: "TAKE UP A RESCUE",
+                      onButtonPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const a1(),
+                          ),
+                        );
+                      }),
+                  SizedBox(
+                    height: size.height * .025,
+                  ),
+                  HomePageCard(
+                      cardDescriptionText: "Want To Enhance Poductivity",
+                      image: Image.asset('images/productive.jpg'),
+                      cardString: "START YOUR JOURNEY",
+                      onButtonPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const a1(),
+                          ),
+                        );
+                      }),
+                  SizedBox(
+                    height: size.height * .025,
+                  ),
+                  !_userRepository.isCounsellor
+                      ? HomePageCard(
+                          cardDescriptionText:
+                              "Need a Counselor To Help You Out",
+                          image: Image.asset('images/counselor.jpg'),
+                          cardString: "CONSULT A COUNSELOR",
+                          onButtonPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => CounselorListPage(
+                                    // doctor: Doctor(
+                                    //     firstName: "Peter",
+                                    //     lastName: "Pane",
+                                    //     image: const Image(
+                                    //       image: AssetImage('mathew.png'),
+                                    //     ),
+                                    //     type: "type",
+                                    //     rating: 4.5),
+                                    ),
+                              ),
+                            );
+                          })
+                      : HomePageCard(
+                          cardDescriptionText:
+                              "Hi Counselor Please Provide your availability",
+                          image: Image.asset('images/counselor.jpg'),
+                          cardString: "Provide Your Availability",
+                          onButtonPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const BookingPage2(),
+                              ),
+                            );
+                          }),
+                  SizedBox(height: size.height * .025),
+                ],
               ),
             ),
-            const ChatPage(),
-            const Text(
-              'Index 2: My Bookings',
-              style: optionStyle,
-            ),
-            SettingPage(),
+            const UpcomingBookingPage(),
+            const BookingHistoryPage(),
+             SettingPage(),
           ],
         ),
         bottomNavigationBar: BottomNavigationBar(
@@ -149,12 +153,12 @@ class _HomePageState extends State<HomePage>
               label: 'Home',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.chat),
-              label: 'Chats',
+              icon: Icon(Icons.calendar_month),
+              label: 'Upcoming Booking',
             ),
             BottomNavigationBarItem(
               icon: Icon(FontAwesomeIcons.calendarCheck),
-              label: 'Bookings',
+              label: 'Previous Bookings',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.settings),

@@ -63,7 +63,7 @@ class _BodyState extends State<Body> {
     }
   }
 
-  List<String> timeSlots = ['10 am', '11 am', '12 pm', '2 pm', '3 pm', '4 pm'];
+  List<String> timeSlots = ['9 am' ,'10 am', '11 am', '1 pm', '2 pm', '3 pm', '5 pm'];
   List<String> seletedTimeSlots = [];
 
   final SlotRepository _slotRepository = SlotRepository();
@@ -84,7 +84,7 @@ class _BodyState extends State<Body> {
         seletedTimeSlots = [];
       });
       _slotRepository
-          .getSlots(selectedDate.toString().split(' ')[0])
+          .getSlotsCounselorSide(selectedDate.toString().split(' ')[0])
           .then((slots) {
         for (var slot in slots) {
           setState(() {
@@ -143,13 +143,16 @@ class _BodyState extends State<Body> {
                       child: Text(slot),
                     ),
                   ),
-                IconButton(
-                    onPressed: () {
-                      _slotRepository.storeSlots(
+                TextButton(
+                  child: Text("Add Slots"),style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Colors.amber),),
+                    onPressed: () async{
+                     await _slotRepository.storeSlots(
                           selectedDate.toString().split(' ')[0],
                           seletedTimeSlots);
+                     Navigator.pop(context);
                     },
-                    icon: const Icon(Icons.add))
+                ),
+
               ],
             )),
     );

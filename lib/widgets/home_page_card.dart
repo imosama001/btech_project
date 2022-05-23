@@ -15,7 +15,7 @@ class HomePageCard extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Container(
-        height: size.height * 0.25,
+        height: size.height * 0.29,
         width: size.width * 0.9,
         decoration: BoxDecoration(
             color: kHomePageContainerColor,

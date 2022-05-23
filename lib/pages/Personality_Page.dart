@@ -105,12 +105,15 @@ class _PersonalityPageState extends State<PersonalityPage>
                         ],
                       ),
                       Container(
-                        height: 100,
-                        width: 200,
-                        decoration: const BoxDecoration(
+                        height: 125,
+                        width: 125,
+                        decoration: imageUrl == "" ? null :  BoxDecoration(
                             image: DecorationImage(image: NetworkImage(
+                                imageUrl
                                 //TODO: Add specific pictures from firebase
-                                'https://static.neris-assets.com/images/personality-types/avatars/intp-logician.png'))),
+
+                                // 'https://static.neris-assets.com/images/personality-types/avatars/intp-logician.png'
+                              ))),
                       ),
                     ],
                   ),
