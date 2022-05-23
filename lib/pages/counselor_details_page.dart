@@ -2,6 +2,7 @@ import 'package:b_tech_project/pages/booking_system/booking_page2.dart';
 import 'package:b_tech_project/utilites/doctor_parameter.dart';
 import 'package:b_tech_project/widgets/counselor_details.dart';
 import 'package:b_tech_project/colors.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:b_tech_project/pages/booking_system/booking_page.dart';
 
@@ -14,10 +15,12 @@ class CounselorDetails extends StatefulWidget {
   _CounselorDetailsState createState() => _CounselorDetailsState();
 }
 
+
+
 class _CounselorDetailsState extends State<CounselorDetails> {
-  /// **********************************************
-  /// LIFE CYCLE METHODS
-  /// **********************************************
+  
+
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -60,7 +63,7 @@ class _CounselorDetailsState extends State<CounselorDetails> {
                         width: 4,
                       ),
                       Text(
-                        'Melbourn, Australia',
+                        widget.doctor.location,
                         style: TextStyle(
                           color: HexColor('#C6C6CD'),
                           fontSize: 14,
@@ -81,7 +84,7 @@ class _CounselorDetailsState extends State<CounselorDetails> {
                       borderRadius: BorderRadius.circular(4),
                     ),
                     child: Text(
-                      widget.doctor.type + ' Specialist',
+                      widget.doctor.speciality + ' Specialist',
                       style: TextStyle(
                         color: HexColor('#FFBF11'),
                         fontSize: 11,
@@ -93,8 +96,10 @@ class _CounselorDetailsState extends State<CounselorDetails> {
                     height: 32,
                   ),
                   Text(
-                    'Dr. Albert Alexanderis a Renal Physician who has comprehensive expertise in the fields of Renal Medicine and Internal Medicine. While Dr Ho specializes in dialysis and critical care nephrology, years of extensive training have also equipped him with skills to effectively handle a wide range of other kidney diseases, including kidney impairment, inflammation, infection and transplantation.',
-                    style: TextStyle(
+                    //'Dr. Albert Alexanderis a Renal Physician who has comprehensive expertise in the fields of Renal Medicine and Internal Medicine. While Dr Ho specializes in dialysis and critical care nephrology, years of extensive training have also equipped him with skills to effectively handle a wide range of other kidney diseases, including kidney impairment, inflammation, infection and transplantation.',
+
+                  widget.doctor.counselorDescription,
+                  style: TextStyle(
                       color: HexColor('#9E9E9E'),
                       fontSize: 14,
                       fontWeight: FontWeight.w300,
@@ -117,16 +122,18 @@ class _CounselorDetailsState extends State<CounselorDetails> {
                   const SizedBox(
                     height: 32,
                   ),
-                  Text(
-                    'Apart from kidney-related conditions, Dr Ho also offers care and consultation in various medical conditions that are related to kidney disease, such as hypertension, diabetes and vascular diseases.',
-                    style: TextStyle(
-                      color: HexColor('#9E9E9E'),
-                      fontSize: 14,
-                      fontWeight: FontWeight.w300,
-                    ),
-                  ),
+                  // Text(
+                  //   //'Apart from kidney-related conditions, Dr Ho also offers care and consultation in various medical conditions that are related to kidney disease, such as hypertension, diabetes and vascular diseases.'
+                  //
+                  //   ,
+                  //   style: TextStyle(
+                  //     color: HexColor('#9E9E9E'),
+                  //     fontSize: 14,
+                  //     fontWeight: FontWeight.w300,
+                  //   ),
+                  // ),
                   SizedBox(
-                    height: size.height * .1,
+                    height: size.height * .05,
                   ),
                   GestureDetector(
                     child: Container(
@@ -150,7 +157,7 @@ class _CounselorDetailsState extends State<CounselorDetails> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => BookingPage2(),
+                          builder: (context) => DoctorBookingPage(doctor: widget.doctor),
                         ),
                       );
                     },

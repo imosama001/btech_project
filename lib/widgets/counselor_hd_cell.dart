@@ -83,7 +83,7 @@ class _HDCellState extends State<HDCell> {
                     height: 16,
                   ),
                   Text(
-                    widget.doctor.type + ' Specialist',
+                    widget.doctor.speciality + ' Specialist',
                     style: const TextStyle(
                       color: Colors.white,
                       fontSize: 14,

@@ -1,6 +1,11 @@
+import 'package:b_tech_project/pages/aboutUs.dart';
 import 'package:b_tech_project/pages/add_counselor_details.dart';
+import 'package:b_tech_project/pages/booking_system/bookingHistoryPage.dart';
+import 'package:b_tech_project/pages/helpAndSupport.dart';
+import 'package:b_tech_project/pages/privacyPolicy.dart';
 import 'package:b_tech_project/pages/upload_counselor_certificates.dart';
 import 'package:b_tech_project/pages/user_profile.dart';
+import 'package:b_tech_project/repository/user_repository.dart';
 import 'package:b_tech_project/widgets/home_page_card.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
@@ -9,6 +14,9 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:b_tech_project/pages/upload_counselor_certificates.dart';
+import 'package:provider/provider.dart';
+
+import '../pages/booking_system/upcomingBookingPage.dart';
 
 class MyDrawer extends StatefulWidget {
   const MyDrawer({Key? key}) : super(key: key);
@@ -50,6 +58,8 @@ class _MyDrawerState extends State<MyDrawer> {
   }
 
   Widget build(BuildContext context) {
+    final UserRepository _userRepository = Provider.of<UserRepository>(context);
+
     Size size = MediaQuery.of(context).size;
     return Drawer(
       child: SafeArea(
@@ -64,7 +74,9 @@ class _MyDrawerState extends State<MyDrawer> {
 
                 child: Column(
                   children: [
-                    GestureDetector(
+                    !_userRepository.isCounsellor?
+                   GestureDetector(
+
                       onTap: () {
                         Navigator.push(
                           context,
@@ -85,7 +97,31 @@ class _MyDrawerState extends State<MyDrawer> {
                         radius: size.width * .12,
                         backgroundImage:
                             //Add network image
-                            NetworkImage(photoUrl),
+                          photoUrl == '' ? null :  NetworkImage(photoUrl),
+                      ),
+                    ):GestureDetector(
+
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => AddCounsellorDetails(),
+                          ),
+                        );
+                      },
+                      // onTap: () {
+                      //   Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //       builder: (context) => AddCounsellorDetails(),
+                      //     ),
+                      //   );
+                      // },
+                      child: CircleAvatar(
+                        radius: size.width * .12,
+                        backgroundImage:
+                        //Add network image
+                        NetworkImage(photoUrl),
                       ),
                     ),
                     Text(
@@ -139,58 +175,101 @@ class _MyDrawerState extends State<MyDrawer> {
             const Divider(
               thickness: 2,
             ),
-            Row(
-              children: [
-                const Padding(padding: EdgeInsets.all(10)),
-                const Icon(Icons.calendar_today),
-                SizedBox(width: size.width * .03),
-                const Text(
-                  "Previous Booking",
-                  style: kDrawerTextStyle,
-                ),
-              ],
+            GestureDetector(
+              onTap: () {
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => BookingHistoryPage(),));
+              },
+              child: Row(
+                children: [
+                  const Padding(padding: EdgeInsets.all(10)),
+                  const Icon(Icons.calendar_today),
+                  SizedBox(width: size.width * .03),
+                  const Text(
+                    "Previous Booking",
+                    style: kDrawerTextStyle,
+                  ),
+                ],
+              ),
             ),
             const Divider(
               thickness: 2,
             ),
-            Row(
-              children: [
-                const Padding(padding: EdgeInsets.all(10)),
-                const Icon(FontAwesomeIcons.questionCircle),
-                SizedBox(width: size.width * .03),
-                const Text(
-                  "Help & Support",
-                  style: kDrawerTextStyle,
-                ),
-              ],
+
+            GestureDetector(
+              onTap: () {
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => UpcomingBookingPage(),));
+              },
+              child: Row(
+                children: [
+                  const Padding(padding: EdgeInsets.all(10)),
+                  const Icon(Icons.calendar_today),
+                  SizedBox(width: size.width * .03),
+                  const Text(
+                    "Upcoming Booking",
+                    style: kDrawerTextStyle,
+                  ),
+                ],
+              ),
+            ),
+
+
+            const Divider(
+              thickness: 2,
+            ),
+
+            GestureDetector(
+              onTap: () {
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => HelpAndSupport(),));
+              },
+              child: Row(
+                children: [
+                  const Padding(padding: EdgeInsets.all(10)),
+                  const Icon(FontAwesomeIcons.questionCircle),
+                  SizedBox(width: size.width * .03),
+                  const Text(
+                    "Help & Support",
+                    style: kDrawerTextStyle,
+                  ),
+                ],
+              ),
             ),
             const Divider(
               thickness: 2,
             ),
-            Row(
-              children: [
-                const Padding(padding: EdgeInsets.all(10)),
-                const Icon(Icons.privacy_tip_outlined),
-                SizedBox(width: size.width * .03),
-                const Text(
-                  "Privacy Policy",
-                  style: kDrawerTextStyle,
-                ),
-              ],
+            GestureDetector(
+              onTap: () {
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => PrivacyPolicy(),));
+              },
+              child: Row(
+                children: [
+                  const Padding(padding: EdgeInsets.all(10)),
+                  const Icon(Icons.privacy_tip_outlined),
+                  SizedBox(width: size.width * .03),
+                  const Text(
+                    "Privacy Policy",
+                    style: kDrawerTextStyle,
+                  ),
+                ],
+              ),
             ),
             const Divider(
               thickness: 2,
             ),
-            Row(
-              children: [
-                const Padding(padding: EdgeInsets.all(10)),
-                const Icon(Icons.account_box_outlined),
-                SizedBox(width: size.width * .03),
-                const Text(
-                  "About Us",
-                  style: kDrawerTextStyle,
-                ),
-              ],
+            GestureDetector(
+              onTap: () {
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => AboutUs(),));
+              },
+              child: Row(
+                children: [
+                  const Padding(padding: EdgeInsets.all(10)),
+                  const Icon(Icons.account_box_outlined),
+                  SizedBox(width: size.width * .03),
+                  const Text(
+                    "About Us",
+                    style: kDrawerTextStyle,
+                  ),
+                ],
+              ),
             ),
             const Divider(
               thickness: 2,

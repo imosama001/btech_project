@@ -213,20 +213,24 @@ class _LogInPageState extends State<LogInPage> {
 
                     await _userRepository
                         .login(emailController.value.text,
-                            passwordController.value.text)
+                            passwordController.value.text).then((user) {
+                              if (user != null) {
+                                ScaffoldMessenger.of(context).hideCurrentSnackBar();
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => HomePage(),
+                                  ),
+                                );
+                              }
+                    })
                         .catchError((error) {
+                      ScaffoldMessenger.of(context).hideCurrentSnackBar();
                       print(error.code.toString() + ' on loginPage');
                       _showErrorSnackBar(errorCode: error.code);
                     });
 
-                    ScaffoldMessenger.of(context).hideCurrentSnackBar();
 
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => HomePage(),
-                      ),
-                    );
                   },
                 ),
                 SizedBox(

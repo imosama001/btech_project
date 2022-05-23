@@ -56,7 +56,6 @@ Widget _showScreen(BuildContext context) {
       return SplashScreen();
     case AppState.unauthenticated:
       print(context.watch<UserRepository>().appState);
-
       return LogInPage();
     case AppState.initial:
       print(context.watch<UserRepository>().appState);

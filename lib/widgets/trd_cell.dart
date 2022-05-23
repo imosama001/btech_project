@@ -99,7 +99,7 @@ class TrdCell extends StatelessWidget {
           height: 10,
         ),
         Text(
-          doctor.type + ' Specialist',
+          doctor.speciality + ' Specialist',
           style: TextStyle(
             color: HexColor('#929BB0'),
             fontSize: 14,

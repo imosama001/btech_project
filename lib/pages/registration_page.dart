@@ -437,7 +437,10 @@ class _RegistrationPageState extends State<RegistrationPage> {
                                 image: File(imageFilePath),
                               )
                               .then(
-                                (value) => Navigator.of(context).pop(),
+                                (value) {
+                                  ScaffoldMessenger.of(context).hideCurrentSnackBar();
+                                  Navigator.of(context).pop();
+                                },
                               )
                               .catchError((error) {
                             _showErrorSnackBar(errorCode: error.code);

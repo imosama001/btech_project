@@ -45,6 +45,9 @@ dependencies:
   image_picker: ^0.8.4+4
   agora_rtc_engine: ^4.0.7 # for video call
   permission_handler: ^8.3.0 # for camera and mic permission and more
+  flutter_tts: ^3.3.3
+  uuid: ^3.0.6
+  http: ^0.13.4
 dev_dependencies:
   flutter_test:
     sdk: flutter

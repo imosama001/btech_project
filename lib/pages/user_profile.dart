@@ -49,37 +49,31 @@ class _UserProfileState extends State<UserProfile> {
     Size _size = MediaQuery.of(context).size;
     return Scaffold(
         // backgroundColor: Colors.cyan[400],
+      appBar: AppBar(
+        title: Text("Profile"),
+        backgroundColor: Colors.amber,
+      ),
         body: SingleChildScrollView(
+          physics:BouncingScrollPhysics(),
       child: Column(
         children: [
-          Container(
-            padding:
-                EdgeInsets.only(top: 40, right: _size.width - 80, left: 20),
-            child: IconButton(
-                onPressed: _backButtonPressed,
-                icon: const Icon(
-                  Icons.arrow_back,
-                  size: 30,
-                  color: Colors.black,
-                )),
-          ),
+         const SizedBox(height: 20),
+          // Container(
+          //   padding: EdgeInsets.only(top: 40, right: _size.width - 0, left: 0),
+          //   child: IconButton(
+          //       onPressed: _backButtonPressed,
+          //       icon: const Icon(
+          //         Icons.arrow_back,
+          //         size: 30,
+          //         color: Colors.black,
+          //       )),
+          // ),
           Center(
-            child: Stack(
-              children: [
-                Container(
-                  child: Image(
-                    image: NetworkImage(photoUrl),
-                    fit: BoxFit.fill,
-                  ),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      boxShadow: const [
-                        BoxShadow(blurRadius: 2, offset: Offset(1, 2)),
-                      ]),
-                  height: 170,
-                  width: 170,
-                ),
-              ],
+            child: CircleAvatar(
+              radius: _size.width * .2,
+              backgroundImage:
+              //Add network image
+              photoUrl == '' ? null :  NetworkImage(photoUrl),
             ),
           ),
           Container(
@@ -88,9 +82,13 @@ class _UserProfileState extends State<UserProfile> {
               crossAxisAlignment: CrossAxisAlignment.start,
               // ignore: prefer_const_literals_to_create_immutables
               children: [
+                const SizedBox(
+                  height: 25,
+                ),
                 Text(
                   name,
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                  style: const TextStyle(
+                      fontWeight: FontWeight.bold, fontSize: 18),
                 ),
                 (personalityType != "")
                     ? Text(
@@ -102,6 +100,7 @@ class _UserProfileState extends State<UserProfile> {
                         "Personality Not calculated...",
                         style: TextStyle(fontSize: 19),
                       ),
+                const SizedBox(height: 20,),
                 const Text(
                   "Discover Your True Potential",
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 19),
@@ -110,7 +109,7 @@ class _UserProfileState extends State<UserProfile> {
             ),
           ),
           const SizedBox(
-            height: 20,
+            height: 10,
           ),
           GestureDetector(
             onTap: () {
@@ -215,34 +214,388 @@ class _UserProfileState extends State<UserProfile> {
           const SizedBox(
             height: 5,
           ),
-          SizedBox(
-            height: _size.width / 5 + 40,
-            width: _size.width,
-            child: ListView.builder(
-              itemCount: 10,
-              scrollDirection: Axis.horizontal,
-              itemBuilder: (ctx, i) =>
-                  _personalityWidget("image", "ENFJ", _size.width / 4, () {
-                print("$i is tapped");
-                Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => PersonalityPage("INTP"),
-                ));
-              }),
-            ),
+          Row(
+            children: [
+              Column(
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PersonalityPage("INTJ"),
+                        ),
+                      );
+
+                },
+                    child: Container(
+                      height: _size.width*.2,
+                      width: _size.width*.2,
+                      child: Image(image:AssetImage('images/intj.png')),
+                    ),
+                  ),
+                  Text("INTJ"),
+                ],
+              ),
+              SizedBox(width: _size.width*.06,),
+              Column(
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PersonalityPage("INTP"),
+                        ),
+                      );
+
+                    },
+                    child: Container(
+                      height: _size.width*.2,
+                      width: _size.width*.2,
+                      child: Image(image:AssetImage('images/intp.png')),
+                    ),
+                  ),
+                  Text("INTP"),
+                ],
+              ),
+              SizedBox(width: _size.width*.06,),
+              Column(
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PersonalityPage("ENTJ"),
+                        ),
+                      );
+
+                    },
+                    child: Container(
+                      height: _size.width*.2,
+                      width: _size.width*.2,
+                      child: Image(image:AssetImage('images/entj.png')),
+                    ),
+                  ),
+                  Text("ENTJ"),
+                ],
+              ),
+              SizedBox(width: _size.width*.06,),
+              Column(
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PersonalityPage("ENTP"),
+                        ),
+                      );
+
+                    },
+                    child: Container(
+                      height: _size.width*.2,
+                      width: _size.width*.2,
+                      child: Image(image:AssetImage('images/entp.png')),
+                    ),
+                  ),
+                  Text("ENTP"),
+                ],
+              ),
+            ],
           ),
+          SizedBox(height: 10,),
+          Row(
+            children: [
+              Column(
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PersonalityPage("INFJ"),
+                        ),
+                      );
+
+                    },
+                    child: Container(
+                      height: _size.width*.2,
+                      width: _size.width*.2,
+                      child: Image(image:AssetImage('images/infj.jpeg')),
+                    ),
+                  ),
+                  Text("INFJ"),
+                ],
+              ),
+              SizedBox(width: _size.width*.06,),
+              Column(
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PersonalityPage("INFP"),
+                        ),
+                      );
+
+                    },
+                    child: Container(
+                      height: _size.width*.2,
+                      width: _size.width*.2,
+                      child: Image(image:AssetImage('images/infp.jpeg')),
+                    ),
+                  ),
+                  Text("INFP"),
+                ],
+              ),
+              SizedBox(width: _size.width*.06,),
+              Column(
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PersonalityPage("ENFJ"),
+                        ),
+                      );
+
+                    },
+                    child: Container(
+                      height: _size.width*.2,
+                      width: _size.width*.2,
+                      child: Image(image:AssetImage('images/enfj.jpeg')),
+                    ),
+                  ),
+                  Text("ENFJ"),
+                ],
+              ),
+              SizedBox(width: _size.width*.06,),
+              Column(
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PersonalityPage("ENFP"),
+                        ),
+                      );
+
+                    },
+                    child: Container(
+                      height: _size.width*.2,
+                      width: _size.width*.2,
+                      child: Image(image:AssetImage('images/enfp.jpeg')),
+                    ),
+                  ),
+                  Text("ENFP"),
+                ],
+              ),
+            ],
+          ),
+          SizedBox(height: 10,),
+          Row(
+            children: [
+              Column(
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PersonalityPage("ISTJ"),
+                        ),
+                      );
+
+                    },
+                    child: Container(
+                      height: _size.width*.2,
+                      width: _size.width*.2,
+                      child: Image(image:AssetImage('images/istj.jpeg')),
+                    ),
+                  ),
+                  Text("ISTJ"),
+                ],
+              ),
+              SizedBox(width: _size.width*.06,),
+              Column(
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PersonalityPage("ISFJ"),
+                        ),
+                      );
+
+                    },
+                    child: Container(
+                      height: _size.width*.2,
+                      width: _size.width*.2,
+                      child: Image(image:AssetImage('images/isfj.png')),
+                    ),
+                  ),
+                  Text("ISFJ"),
+                ],
+              ),
+              SizedBox(width: _size.width*.06,),
+              Column(
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PersonalityPage("ESTJ"),
+                        ),
+                      );
+
+                    },
+                    child: Container(
+                      height: _size.width*.2,
+                      width: _size.width*.2,
+                      child: Image(image:AssetImage('images/estj.png')),
+                    ),
+                  ),
+                  Text("ESTJ"),
+                ],
+              ),
+              SizedBox(width: _size.width*.06,),
+              Column(
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PersonalityPage("ESFJ"),
+                        ),
+                      );
+
+                    },
+                    child: Container(
+                      height: _size.width*.2,
+                      width: _size.width*.2,
+                      child: Image(image:AssetImage('images/esfj.jpeg')),
+                    ),
+                  ),
+                  Text("ESFJ"),
+                ],
+              ),
+            ],
+          ),
+          SizedBox(height: 10,),
+
+          Row(
+            children: [
+              Column(
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PersonalityPage("ISTP"),
+                        ),
+                      );
+
+                    },
+                    child: Container(
+                      height: _size.width*.2,
+                      width: _size.width*.2,
+                      child: Image(image:AssetImage('images/istp.jpeg')),
+                    ),
+                  ),
+                  Text("ISTP"),
+                ],
+              ),
+              SizedBox(width: _size.width*.06,),
+              Column(
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PersonalityPage("ISFP"),
+                        ),
+                      );
+
+                    },
+                    child: Container(
+                      height: _size.width*.2,
+                      width: _size.width*.2,
+                      child: Image(image:AssetImage('images/isfp.jpeg')),
+                    ),
+                  ),
+                  Text("ISFP"),
+                ],
+              ),
+              SizedBox(width: _size.width*.06,),
+              Column(
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PersonalityPage("ESTP"),
+                        ),
+                      );
+
+                    },
+                    child: Container(
+                      height: _size.width*.2,
+                      width: _size.width*.2,
+                      child: Image(image:AssetImage('images/estp.jpeg')),
+                    ),
+                  ),
+                  Text("ESTP"),
+                ],
+              ),
+              SizedBox(width: _size.width*.06,),
+              Column(
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PersonalityPage("ESFP"),
+                        ),
+                      );
+
+                    },
+                    child: Container(
+                      height: _size.width*.2,
+                      width: _size.width*.2,
+                      child: Image(image:AssetImage('images/esfp.png')),
+                    ),
+                  ),
+                  Text("ESFP"),
+                ],
+              ),
+            ],
+          ),
+          SizedBox(height: 30,)
         ],
       ),
     ));
   }
 
-  _backButtonPressed() {
-    print("back");
-    Navigator.pop(context);
-  }
+  // _backButtonPressed() {
+  //   print("back");
+  //   Navigator.pop(context);
+  // }
 
-  _editButtonPressed() {
-    print('Edit');
-  }
+  // _editButtonPressed() {
+  //   print('Edit');
+  // }
 
   Widget _squareCard(String imageLocation, String name, String time,
       Function onTap, double side) {
